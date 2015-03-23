@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/herokingsley/HER0_EV/network/ipport.h
+arpa/inet.h
+-
+
+/home/herokingsley/HER0_EV/network/socket.h
+ipport.h
+/home/herokingsley/HER0_EV/network/ipport.h
+netinet/in.h
+-
+netinet/tcp.h
+-
+netinet/udp.h
+-
+errno.h
+-
+fcntl.h
+-
+stdio.h
+-
+strings.h
+-
+unistd.h
+-
+
+/home/herokingsley/HER0_EV/network/utest_tcpsocket_srv.cpp
+socket.h
+/home/herokingsley/HER0_EV/network/socket.h
+

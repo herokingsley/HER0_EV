@@ -23,15 +23,13 @@ public:
     //getter and setter
     void setEventHandler(EventHandler* eventHandler){ this->eventHandler = eventHandler;}
     void setSocket(Socket& socket){ this.socket = socket; }
-    int GetInterestedEvents(){ return events; }
-    int GetCurrentEvents(){ return r_events; }
+    
 
 private:
     Socket& socket;
     EventHandler* eventHandler;
-    int events;
-    int r_events;// current event
-    
+    int event;
+    int r_event;// current event
 
 };
 

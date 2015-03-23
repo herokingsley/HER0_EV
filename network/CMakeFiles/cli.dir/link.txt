@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.o CMakeFiles/cli.dir/eventhandler.cpp.o CMakeFiles/cli.dir/hreactor.cpp.o CMakeFiles/cli.dir/socket.cpp.o CMakeFiles/cli.dir/ipport.cpp.o  -o cli -rdynamic 

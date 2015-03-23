@@ -3,7 +3,7 @@
 
 int main(){
    
-    HReactor reactor = new HReactor();
-    reactor.start();
+    HReactor* reactor = new HReactor();
+    reactor->start();
     return 0;
 }
