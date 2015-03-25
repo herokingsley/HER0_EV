@@ -53,108 +53,73 @@ CMAKE_SOURCE_DIR = /home/herokingsley/HER0_EV/network
 CMAKE_BINARY_DIR = /home/herokingsley/HER0_EV/network
 
 #=============================================================================
-# Target rules for target CMakeFiles/cli.dir
+# Target rules for target CMakeFiles/epoll_cli.dir
 
 # All Build rule for target.
-CMakeFiles/cli.dir/all:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/depend
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5
-	@echo "Built target cli"
-.PHONY : CMakeFiles/cli.dir/all
+CMakeFiles/epoll_cli.dir/all:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/depend
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5 6 7 8
+	@echo "Built target epoll_cli"
+.PHONY : CMakeFiles/epoll_cli.dir/all
 
 # Include target in all.
-all: CMakeFiles/cli.dir/all
+all: CMakeFiles/epoll_cli.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cli.dir/all
+CMakeFiles/epoll_cli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
-.PHONY : CMakeFiles/cli.dir/rule
+.PHONY : CMakeFiles/epoll_cli.dir/rule
 
 # Convenience name for target.
-cli: CMakeFiles/cli.dir/rule
-.PHONY : cli
+epoll_cli: CMakeFiles/epoll_cli.dir/rule
+.PHONY : epoll_cli
 
 # clean rule for target.
-CMakeFiles/cli.dir/clean:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/clean
-.PHONY : CMakeFiles/cli.dir/clean
+CMakeFiles/epoll_cli.dir/clean:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/clean
+.PHONY : CMakeFiles/epoll_cli.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/cli.dir/clean
+clean: CMakeFiles/epoll_cli.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/epoll_srv.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  6 7 8 9 10
-	@echo "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/epoll_srv.dir/all:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/depend
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  9 10 11 12 13 14 15 16 17
+	@echo "Built target epoll_srv"
+.PHONY : CMakeFiles/epoll_srv.dir/all
 
 # Include target in all.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/epoll_srv.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+CMakeFiles/epoll_srv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_srv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/epoll_srv.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+epoll_srv: CMakeFiles/epoll_srv.dir/rule
+.PHONY : epoll_srv
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/epoll_srv.dir/clean:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/clean
+.PHONY : CMakeFiles/epoll_srv.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/main.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/srv.dir
-
-# All Build rule for target.
-CMakeFiles/srv.dir/all:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/depend
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  11 12 13 14 15
-	@echo "Built target srv"
-.PHONY : CMakeFiles/srv.dir/all
-
-# Include target in all.
-all: CMakeFiles/srv.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/srv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/srv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
-.PHONY : CMakeFiles/srv.dir/rule
-
-# Convenience name for target.
-srv: CMakeFiles/srv.dir/rule
-.PHONY : srv
-
-# clean rule for target.
-CMakeFiles/srv.dir/clean:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/clean
-.PHONY : CMakeFiles/srv.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/srv.dir/clean
+clean: CMakeFiles/epoll_srv.dir/clean
 .PHONY : clean
 
 #=============================================================================

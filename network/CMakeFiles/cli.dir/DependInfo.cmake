@@ -4,10 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/herokingsley/HER0_EV/network/eventhandler.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/eventhandler.cpp.o"
-  "/home/herokingsley/HER0_EV/network/hreactor.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/hreactor.cpp.o"
-  "/home/herokingsley/HER0_EV/network/ipport.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/ipport.cpp.o"
-  "/home/herokingsley/HER0_EV/network/socket.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/socket.cpp.o"
+  "/home/herokingsley/HER0_EV/network/Channel.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/Channel.cpp.o"
+  "/home/herokingsley/HER0_EV/network/EPoller.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/EPoller.cpp.o"
+  "/home/herokingsley/HER0_EV/network/EventHandler.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/EventHandler.cpp.o"
+  "/home/herokingsley/HER0_EV/network/HReactor.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/HReactor.cpp.o"
+  "/home/herokingsley/HER0_EV/network/IpPort.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/IpPort.cpp.o"
+  "/home/herokingsley/HER0_EV/network/PollerBase.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/PollerBase.cpp.o"
+  "/home/herokingsley/HER0_EV/network/Socket.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/Socket.cpp.o"
   "/home/herokingsley/HER0_EV/network/utest_tcpsocket_cli.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

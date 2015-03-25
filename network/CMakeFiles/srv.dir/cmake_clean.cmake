@@ -1,9 +1,12 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o"
-  "CMakeFiles/srv.dir/eventhandler.cpp.o"
-  "CMakeFiles/srv.dir/hreactor.cpp.o"
-  "CMakeFiles/srv.dir/socket.cpp.o"
-  "CMakeFiles/srv.dir/ipport.cpp.o"
+  "CMakeFiles/srv.dir/Channel.cpp.o"
+  "CMakeFiles/srv.dir/EPoller.cpp.o"
+  "CMakeFiles/srv.dir/EventHandler.cpp.o"
+  "CMakeFiles/srv.dir/HReactor.cpp.o"
+  "CMakeFiles/srv.dir/IpPort.cpp.o"
+  "CMakeFiles/srv.dir/PollerBase.cpp.o"
+  "CMakeFiles/srv.dir/Socket.cpp.o"
   "srv.pdb"
   "srv"
 )

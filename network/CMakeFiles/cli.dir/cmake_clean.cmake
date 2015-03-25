@@ -1,9 +1,12 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.o"
-  "CMakeFiles/cli.dir/eventhandler.cpp.o"
-  "CMakeFiles/cli.dir/hreactor.cpp.o"
-  "CMakeFiles/cli.dir/socket.cpp.o"
-  "CMakeFiles/cli.dir/ipport.cpp.o"
+  "CMakeFiles/cli.dir/Channel.cpp.o"
+  "CMakeFiles/cli.dir/EPoller.cpp.o"
+  "CMakeFiles/cli.dir/EventHandler.cpp.o"
+  "CMakeFiles/cli.dir/HReactor.cpp.o"
+  "CMakeFiles/cli.dir/IpPort.cpp.o"
+  "CMakeFiles/cli.dir/PollerBase.cpp.o"
+  "CMakeFiles/cli.dir/Socket.cpp.o"
   "cli.pdb"
   "cli"
 )

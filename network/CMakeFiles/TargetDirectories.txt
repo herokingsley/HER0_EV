@@ -1,3 +1,2 @@
-/home/herokingsley/HER0_EV/network/CMakeFiles/cli.dir
-/home/herokingsley/HER0_EV/network/CMakeFiles/main.dir
-/home/herokingsley/HER0_EV/network/CMakeFiles/srv.dir
+/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir
+/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir

@@ -99,235 +99,291 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cli
+# Target rules for targets named epoll_cli
 
 # Build rule for target.
-cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cli
-.PHONY : cli
+epoll_cli: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 epoll_cli
+.PHONY : epoll_cli
 
 # fast build rule for target.
-cli/fast:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/build
-.PHONY : cli/fast
+epoll_cli/fast:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/build
+.PHONY : epoll_cli/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named epoll_srv
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+epoll_srv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 epoll_srv
+.PHONY : epoll_srv
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+epoll_srv/fast:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/build
+.PHONY : epoll_srv/fast
 
-#=============================================================================
-# Target rules for targets named srv
-
-# Build rule for target.
-srv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 srv
-.PHONY : srv
-
-# fast build rule for target.
-srv/fast:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/build
-.PHONY : srv/fast
-
-application.o: application.cpp.o
-.PHONY : application.o
+Channel.o: Channel.cpp.o
+.PHONY : Channel.o
 
 # target to build an object file
-application.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/application.cpp.o
-.PHONY : application.cpp.o
+Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.o
+.PHONY : Channel.cpp.o
 
-application.i: application.cpp.i
-.PHONY : application.i
+Channel.i: Channel.cpp.i
+.PHONY : Channel.i
 
 # target to preprocess a source file
-application.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/application.cpp.i
-.PHONY : application.cpp.i
+Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.i
+.PHONY : Channel.cpp.i
 
-application.s: application.cpp.s
-.PHONY : application.s
+Channel.s: Channel.cpp.s
+.PHONY : Channel.s
 
 # target to generate assembly for a file
-application.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/application.cpp.s
-.PHONY : application.cpp.s
+Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.s
+.PHONY : Channel.cpp.s
 
-eventhandler.o: eventhandler.cpp.o
-.PHONY : eventhandler.o
+EPoller.o: EPoller.cpp.o
+.PHONY : EPoller.o
 
 # target to build an object file
-eventhandler.cpp.o:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/eventhandler.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eventhandler.cpp.o
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/eventhandler.cpp.o
-.PHONY : eventhandler.cpp.o
+EPoller.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.o
+.PHONY : EPoller.cpp.o
 
-eventhandler.i: eventhandler.cpp.i
-.PHONY : eventhandler.i
+EPoller.i: EPoller.cpp.i
+.PHONY : EPoller.i
 
 # target to preprocess a source file
-eventhandler.cpp.i:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/eventhandler.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eventhandler.cpp.i
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/eventhandler.cpp.i
-.PHONY : eventhandler.cpp.i
+EPoller.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.i
+.PHONY : EPoller.cpp.i
 
-eventhandler.s: eventhandler.cpp.s
-.PHONY : eventhandler.s
+EPoller.s: EPoller.cpp.s
+.PHONY : EPoller.s
 
 # target to generate assembly for a file
-eventhandler.cpp.s:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/eventhandler.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eventhandler.cpp.s
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/eventhandler.cpp.s
-.PHONY : eventhandler.cpp.s
+EPoller.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.s
+.PHONY : EPoller.cpp.s
 
-hreactor.o: hreactor.cpp.o
-.PHONY : hreactor.o
+EventHandler.o: EventHandler.cpp.o
+.PHONY : EventHandler.o
 
 # target to build an object file
-hreactor.cpp.o:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/hreactor.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/hreactor.cpp.o
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/hreactor.cpp.o
-.PHONY : hreactor.cpp.o
+EventHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.o
+.PHONY : EventHandler.cpp.o
 
-hreactor.i: hreactor.cpp.i
-.PHONY : hreactor.i
+EventHandler.i: EventHandler.cpp.i
+.PHONY : EventHandler.i
 
 # target to preprocess a source file
-hreactor.cpp.i:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/hreactor.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/hreactor.cpp.i
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/hreactor.cpp.i
-.PHONY : hreactor.cpp.i
+EventHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.i
+.PHONY : EventHandler.cpp.i
 
-hreactor.s: hreactor.cpp.s
-.PHONY : hreactor.s
+EventHandler.s: EventHandler.cpp.s
+.PHONY : EventHandler.s
 
 # target to generate assembly for a file
-hreactor.cpp.s:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/hreactor.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/hreactor.cpp.s
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/hreactor.cpp.s
-.PHONY : hreactor.cpp.s
+EventHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.s
+.PHONY : EventHandler.cpp.s
 
-ipport.o: ipport.cpp.o
-.PHONY : ipport.o
+HReactor.o: HReactor.cpp.o
+.PHONY : HReactor.o
 
 # target to build an object file
-ipport.cpp.o:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/ipport.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ipport.cpp.o
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/ipport.cpp.o
-.PHONY : ipport.cpp.o
+HReactor.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.o
+.PHONY : HReactor.cpp.o
 
-ipport.i: ipport.cpp.i
-.PHONY : ipport.i
+HReactor.i: HReactor.cpp.i
+.PHONY : HReactor.i
 
 # target to preprocess a source file
-ipport.cpp.i:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/ipport.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ipport.cpp.i
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/ipport.cpp.i
-.PHONY : ipport.cpp.i
+HReactor.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.i
+.PHONY : HReactor.cpp.i
 
-ipport.s: ipport.cpp.s
-.PHONY : ipport.s
+HReactor.s: HReactor.cpp.s
+.PHONY : HReactor.s
 
 # target to generate assembly for a file
-ipport.cpp.s:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/ipport.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ipport.cpp.s
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/ipport.cpp.s
-.PHONY : ipport.cpp.s
+HReactor.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.s
+.PHONY : HReactor.cpp.s
 
-socket.o: socket.cpp.o
-.PHONY : socket.o
+IpPort.o: IpPort.cpp.o
+.PHONY : IpPort.o
 
 # target to build an object file
-socket.cpp.o:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/socket.cpp.o
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/socket.cpp.o
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/socket.cpp.o
-.PHONY : socket.cpp.o
+IpPort.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.o
+.PHONY : IpPort.cpp.o
 
-socket.i: socket.cpp.i
-.PHONY : socket.i
+IpPort.i: IpPort.cpp.i
+.PHONY : IpPort.i
 
 # target to preprocess a source file
-socket.cpp.i:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/socket.cpp.i
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/socket.cpp.i
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/socket.cpp.i
-.PHONY : socket.cpp.i
+IpPort.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.i
+.PHONY : IpPort.cpp.i
 
-socket.s: socket.cpp.s
-.PHONY : socket.s
+IpPort.s: IpPort.cpp.s
+.PHONY : IpPort.s
 
 # target to generate assembly for a file
-socket.cpp.s:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/socket.cpp.s
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/socket.cpp.s
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/socket.cpp.s
-.PHONY : socket.cpp.s
+IpPort.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.s
+.PHONY : IpPort.cpp.s
 
-utest_tcpsocket_cli.o: utest_tcpsocket_cli.cpp.o
-.PHONY : utest_tcpsocket_cli.o
+PollerBase.o: PollerBase.cpp.o
+.PHONY : PollerBase.o
 
 # target to build an object file
-utest_tcpsocket_cli.cpp.o:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.o
-.PHONY : utest_tcpsocket_cli.cpp.o
+PollerBase.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.o
+.PHONY : PollerBase.cpp.o
 
-utest_tcpsocket_cli.i: utest_tcpsocket_cli.cpp.i
-.PHONY : utest_tcpsocket_cli.i
+PollerBase.i: PollerBase.cpp.i
+.PHONY : PollerBase.i
 
 # target to preprocess a source file
-utest_tcpsocket_cli.cpp.i:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.i
-.PHONY : utest_tcpsocket_cli.cpp.i
+PollerBase.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.i
+.PHONY : PollerBase.cpp.i
 
-utest_tcpsocket_cli.s: utest_tcpsocket_cli.cpp.s
-.PHONY : utest_tcpsocket_cli.s
+PollerBase.s: PollerBase.cpp.s
+.PHONY : PollerBase.s
 
 # target to generate assembly for a file
-utest_tcpsocket_cli.cpp.s:
-	$(MAKE) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/utest_tcpsocket_cli.cpp.s
-.PHONY : utest_tcpsocket_cli.cpp.s
+PollerBase.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.s
+.PHONY : PollerBase.cpp.s
 
-utest_tcpsocket_srv.o: utest_tcpsocket_srv.cpp.o
-.PHONY : utest_tcpsocket_srv.o
+Socket.o: Socket.cpp.o
+.PHONY : Socket.o
 
 # target to build an object file
-utest_tcpsocket_srv.cpp.o:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o
-.PHONY : utest_tcpsocket_srv.cpp.o
+Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.o
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.o
+.PHONY : Socket.cpp.o
 
-utest_tcpsocket_srv.i: utest_tcpsocket_srv.cpp.i
-.PHONY : utest_tcpsocket_srv.i
+Socket.i: Socket.cpp.i
+.PHONY : Socket.i
 
 # target to preprocess a source file
-utest_tcpsocket_srv.cpp.i:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.i
-.PHONY : utest_tcpsocket_srv.cpp.i
+Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.i
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.i
+.PHONY : Socket.cpp.i
 
-utest_tcpsocket_srv.s: utest_tcpsocket_srv.cpp.s
-.PHONY : utest_tcpsocket_srv.s
+Socket.s: Socket.cpp.s
+.PHONY : Socket.s
 
 # target to generate assembly for a file
-utest_tcpsocket_srv.cpp.s:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.s
-.PHONY : utest_tcpsocket_srv.cpp.s
+Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.s
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.s
+.PHONY : Socket.cpp.s
+
+utest_epoll_client.o: utest_epoll_client.cpp.o
+.PHONY : utest_epoll_client.o
+
+# target to build an object file
+utest_epoll_client.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o
+.PHONY : utest_epoll_client.cpp.o
+
+utest_epoll_client.i: utest_epoll_client.cpp.i
+.PHONY : utest_epoll_client.i
+
+# target to preprocess a source file
+utest_epoll_client.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.i
+.PHONY : utest_epoll_client.cpp.i
+
+utest_epoll_client.s: utest_epoll_client.cpp.s
+.PHONY : utest_epoll_client.s
+
+# target to generate assembly for a file
+utest_epoll_client.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.s
+.PHONY : utest_epoll_client.cpp.s
+
+utest_epoll_server.o: utest_epoll_server.cpp.o
+.PHONY : utest_epoll_server.o
+
+# target to build an object file
+utest_epoll_server.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.o
+.PHONY : utest_epoll_server.cpp.o
+
+utest_epoll_server.i: utest_epoll_server.cpp.i
+.PHONY : utest_epoll_server.i
+
+# target to preprocess a source file
+utest_epoll_server.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.i
+.PHONY : utest_epoll_server.cpp.i
+
+utest_epoll_server.s: utest_epoll_server.cpp.s
+.PHONY : utest_epoll_server.s
+
+# target to generate assembly for a file
+utest_epoll_server.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.s
+.PHONY : utest_epoll_server.cpp.s
+
+utest_eventhandler.o: utest_eventhandler.cpp.o
+.PHONY : utest_eventhandler.o
+
+# target to build an object file
+utest_eventhandler.cpp.o:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.o
+.PHONY : utest_eventhandler.cpp.o
+
+utest_eventhandler.i: utest_eventhandler.cpp.i
+.PHONY : utest_eventhandler.i
+
+# target to preprocess a source file
+utest_eventhandler.cpp.i:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.i
+.PHONY : utest_eventhandler.cpp.i
+
+utest_eventhandler.s: utest_eventhandler.cpp.s
+.PHONY : utest_eventhandler.s
+
+# target to generate assembly for a file
+utest_eventhandler.cpp.s:
+	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.s
+.PHONY : utest_eventhandler.cpp.s
 
 # Help Target
 help:
@@ -335,32 +391,40 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... cli"
 	@echo "... edit_cache"
-	@echo "... main"
+	@echo "... epoll_cli"
+	@echo "... epoll_srv"
 	@echo "... rebuild_cache"
-	@echo "... srv"
-	@echo "... application.o"
-	@echo "... application.i"
-	@echo "... application.s"
-	@echo "... eventhandler.o"
-	@echo "... eventhandler.i"
-	@echo "... eventhandler.s"
-	@echo "... hreactor.o"
-	@echo "... hreactor.i"
-	@echo "... hreactor.s"
-	@echo "... ipport.o"
-	@echo "... ipport.i"
-	@echo "... ipport.s"
-	@echo "... socket.o"
-	@echo "... socket.i"
-	@echo "... socket.s"
-	@echo "... utest_tcpsocket_cli.o"
-	@echo "... utest_tcpsocket_cli.i"
-	@echo "... utest_tcpsocket_cli.s"
-	@echo "... utest_tcpsocket_srv.o"
-	@echo "... utest_tcpsocket_srv.i"
-	@echo "... utest_tcpsocket_srv.s"
+	@echo "... Channel.o"
+	@echo "... Channel.i"
+	@echo "... Channel.s"
+	@echo "... EPoller.o"
+	@echo "... EPoller.i"
+	@echo "... EPoller.s"
+	@echo "... EventHandler.o"
+	@echo "... EventHandler.i"
+	@echo "... EventHandler.s"
+	@echo "... HReactor.o"
+	@echo "... HReactor.i"
+	@echo "... HReactor.s"
+	@echo "... IpPort.o"
+	@echo "... IpPort.i"
+	@echo "... IpPort.s"
+	@echo "... PollerBase.o"
+	@echo "... PollerBase.i"
+	@echo "... PollerBase.s"
+	@echo "... Socket.o"
+	@echo "... Socket.i"
+	@echo "... Socket.s"
+	@echo "... utest_epoll_client.o"
+	@echo "... utest_epoll_client.i"
+	@echo "... utest_epoll_client.s"
+	@echo "... utest_epoll_server.o"
+	@echo "... utest_epoll_server.i"
+	@echo "... utest_epoll_server.s"
+	@echo "... utest_eventhandler.o"
+	@echo "... utest_eventhandler.i"
+	@echo "... utest_eventhandler.s"
 .PHONY : help
 
 

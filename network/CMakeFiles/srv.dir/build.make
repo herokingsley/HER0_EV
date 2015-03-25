@@ -72,114 +72,189 @@ CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o.provides: CMakeFiles/srv.dir/utest_
 
 CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o.provides.build: CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o
 
-CMakeFiles/srv.dir/eventhandler.cpp.o: CMakeFiles/srv.dir/flags.make
-CMakeFiles/srv.dir/eventhandler.cpp.o: eventhandler.cpp
+CMakeFiles/srv.dir/Channel.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/Channel.cpp.o: Channel.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/eventhandler.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/eventhandler.cpp.o -c /home/herokingsley/HER0_EV/network/eventhandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/Channel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/Channel.cpp.o -c /home/herokingsley/HER0_EV/network/Channel.cpp
 
-CMakeFiles/srv.dir/eventhandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/eventhandler.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/eventhandler.cpp > CMakeFiles/srv.dir/eventhandler.cpp.i
+CMakeFiles/srv.dir/Channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/Channel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/Channel.cpp > CMakeFiles/srv.dir/Channel.cpp.i
 
-CMakeFiles/srv.dir/eventhandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/eventhandler.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/eventhandler.cpp -o CMakeFiles/srv.dir/eventhandler.cpp.s
+CMakeFiles/srv.dir/Channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/Channel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/Channel.cpp -o CMakeFiles/srv.dir/Channel.cpp.s
 
-CMakeFiles/srv.dir/eventhandler.cpp.o.requires:
-.PHONY : CMakeFiles/srv.dir/eventhandler.cpp.o.requires
+CMakeFiles/srv.dir/Channel.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/Channel.cpp.o.requires
 
-CMakeFiles/srv.dir/eventhandler.cpp.o.provides: CMakeFiles/srv.dir/eventhandler.cpp.o.requires
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/eventhandler.cpp.o.provides.build
-.PHONY : CMakeFiles/srv.dir/eventhandler.cpp.o.provides
+CMakeFiles/srv.dir/Channel.cpp.o.provides: CMakeFiles/srv.dir/Channel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/Channel.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/Channel.cpp.o.provides
 
-CMakeFiles/srv.dir/eventhandler.cpp.o.provides.build: CMakeFiles/srv.dir/eventhandler.cpp.o
+CMakeFiles/srv.dir/Channel.cpp.o.provides.build: CMakeFiles/srv.dir/Channel.cpp.o
 
-CMakeFiles/srv.dir/hreactor.cpp.o: CMakeFiles/srv.dir/flags.make
-CMakeFiles/srv.dir/hreactor.cpp.o: hreactor.cpp
+CMakeFiles/srv.dir/EPoller.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/EPoller.cpp.o: EPoller.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/hreactor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/hreactor.cpp.o -c /home/herokingsley/HER0_EV/network/hreactor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/EPoller.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/EPoller.cpp.o -c /home/herokingsley/HER0_EV/network/EPoller.cpp
 
-CMakeFiles/srv.dir/hreactor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/hreactor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/hreactor.cpp > CMakeFiles/srv.dir/hreactor.cpp.i
+CMakeFiles/srv.dir/EPoller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/EPoller.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/EPoller.cpp > CMakeFiles/srv.dir/EPoller.cpp.i
 
-CMakeFiles/srv.dir/hreactor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/hreactor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/hreactor.cpp -o CMakeFiles/srv.dir/hreactor.cpp.s
+CMakeFiles/srv.dir/EPoller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/EPoller.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/EPoller.cpp -o CMakeFiles/srv.dir/EPoller.cpp.s
 
-CMakeFiles/srv.dir/hreactor.cpp.o.requires:
-.PHONY : CMakeFiles/srv.dir/hreactor.cpp.o.requires
+CMakeFiles/srv.dir/EPoller.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/EPoller.cpp.o.requires
 
-CMakeFiles/srv.dir/hreactor.cpp.o.provides: CMakeFiles/srv.dir/hreactor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/hreactor.cpp.o.provides.build
-.PHONY : CMakeFiles/srv.dir/hreactor.cpp.o.provides
+CMakeFiles/srv.dir/EPoller.cpp.o.provides: CMakeFiles/srv.dir/EPoller.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/EPoller.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/EPoller.cpp.o.provides
 
-CMakeFiles/srv.dir/hreactor.cpp.o.provides.build: CMakeFiles/srv.dir/hreactor.cpp.o
+CMakeFiles/srv.dir/EPoller.cpp.o.provides.build: CMakeFiles/srv.dir/EPoller.cpp.o
 
-CMakeFiles/srv.dir/socket.cpp.o: CMakeFiles/srv.dir/flags.make
-CMakeFiles/srv.dir/socket.cpp.o: socket.cpp
+CMakeFiles/srv.dir/EventHandler.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/EventHandler.cpp.o: EventHandler.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/socket.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/socket.cpp.o -c /home/herokingsley/HER0_EV/network/socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/EventHandler.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/EventHandler.cpp.o -c /home/herokingsley/HER0_EV/network/EventHandler.cpp
 
-CMakeFiles/srv.dir/socket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/socket.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/socket.cpp > CMakeFiles/srv.dir/socket.cpp.i
+CMakeFiles/srv.dir/EventHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/EventHandler.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/EventHandler.cpp > CMakeFiles/srv.dir/EventHandler.cpp.i
 
-CMakeFiles/srv.dir/socket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/socket.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/socket.cpp -o CMakeFiles/srv.dir/socket.cpp.s
+CMakeFiles/srv.dir/EventHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/EventHandler.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/EventHandler.cpp -o CMakeFiles/srv.dir/EventHandler.cpp.s
 
-CMakeFiles/srv.dir/socket.cpp.o.requires:
-.PHONY : CMakeFiles/srv.dir/socket.cpp.o.requires
+CMakeFiles/srv.dir/EventHandler.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/EventHandler.cpp.o.requires
 
-CMakeFiles/srv.dir/socket.cpp.o.provides: CMakeFiles/srv.dir/socket.cpp.o.requires
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/socket.cpp.o.provides.build
-.PHONY : CMakeFiles/srv.dir/socket.cpp.o.provides
+CMakeFiles/srv.dir/EventHandler.cpp.o.provides: CMakeFiles/srv.dir/EventHandler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/EventHandler.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/EventHandler.cpp.o.provides
 
-CMakeFiles/srv.dir/socket.cpp.o.provides.build: CMakeFiles/srv.dir/socket.cpp.o
+CMakeFiles/srv.dir/EventHandler.cpp.o.provides.build: CMakeFiles/srv.dir/EventHandler.cpp.o
 
-CMakeFiles/srv.dir/ipport.cpp.o: CMakeFiles/srv.dir/flags.make
-CMakeFiles/srv.dir/ipport.cpp.o: ipport.cpp
+CMakeFiles/srv.dir/HReactor.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/HReactor.cpp.o: HReactor.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/ipport.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/ipport.cpp.o -c /home/herokingsley/HER0_EV/network/ipport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/HReactor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/HReactor.cpp.o -c /home/herokingsley/HER0_EV/network/HReactor.cpp
 
-CMakeFiles/srv.dir/ipport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/ipport.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/ipport.cpp > CMakeFiles/srv.dir/ipport.cpp.i
+CMakeFiles/srv.dir/HReactor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/HReactor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/HReactor.cpp > CMakeFiles/srv.dir/HReactor.cpp.i
 
-CMakeFiles/srv.dir/ipport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/ipport.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/ipport.cpp -o CMakeFiles/srv.dir/ipport.cpp.s
+CMakeFiles/srv.dir/HReactor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/HReactor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/HReactor.cpp -o CMakeFiles/srv.dir/HReactor.cpp.s
 
-CMakeFiles/srv.dir/ipport.cpp.o.requires:
-.PHONY : CMakeFiles/srv.dir/ipport.cpp.o.requires
+CMakeFiles/srv.dir/HReactor.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/HReactor.cpp.o.requires
 
-CMakeFiles/srv.dir/ipport.cpp.o.provides: CMakeFiles/srv.dir/ipport.cpp.o.requires
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/ipport.cpp.o.provides.build
-.PHONY : CMakeFiles/srv.dir/ipport.cpp.o.provides
+CMakeFiles/srv.dir/HReactor.cpp.o.provides: CMakeFiles/srv.dir/HReactor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/HReactor.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/HReactor.cpp.o.provides
 
-CMakeFiles/srv.dir/ipport.cpp.o.provides.build: CMakeFiles/srv.dir/ipport.cpp.o
+CMakeFiles/srv.dir/HReactor.cpp.o.provides.build: CMakeFiles/srv.dir/HReactor.cpp.o
+
+CMakeFiles/srv.dir/IpPort.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/IpPort.cpp.o: IpPort.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/IpPort.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/IpPort.cpp.o -c /home/herokingsley/HER0_EV/network/IpPort.cpp
+
+CMakeFiles/srv.dir/IpPort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/IpPort.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/IpPort.cpp > CMakeFiles/srv.dir/IpPort.cpp.i
+
+CMakeFiles/srv.dir/IpPort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/IpPort.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/IpPort.cpp -o CMakeFiles/srv.dir/IpPort.cpp.s
+
+CMakeFiles/srv.dir/IpPort.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/IpPort.cpp.o.requires
+
+CMakeFiles/srv.dir/IpPort.cpp.o.provides: CMakeFiles/srv.dir/IpPort.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/IpPort.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/IpPort.cpp.o.provides
+
+CMakeFiles/srv.dir/IpPort.cpp.o.provides.build: CMakeFiles/srv.dir/IpPort.cpp.o
+
+CMakeFiles/srv.dir/PollerBase.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/PollerBase.cpp.o: PollerBase.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/PollerBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/PollerBase.cpp.o -c /home/herokingsley/HER0_EV/network/PollerBase.cpp
+
+CMakeFiles/srv.dir/PollerBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/PollerBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/PollerBase.cpp > CMakeFiles/srv.dir/PollerBase.cpp.i
+
+CMakeFiles/srv.dir/PollerBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/PollerBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/PollerBase.cpp -o CMakeFiles/srv.dir/PollerBase.cpp.s
+
+CMakeFiles/srv.dir/PollerBase.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/PollerBase.cpp.o.requires
+
+CMakeFiles/srv.dir/PollerBase.cpp.o.provides: CMakeFiles/srv.dir/PollerBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/PollerBase.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/PollerBase.cpp.o.provides
+
+CMakeFiles/srv.dir/PollerBase.cpp.o.provides.build: CMakeFiles/srv.dir/PollerBase.cpp.o
+
+CMakeFiles/srv.dir/Socket.cpp.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/Socket.cpp.o: Socket.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/srv.dir/Socket.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/srv.dir/Socket.cpp.o -c /home/herokingsley/HER0_EV/network/Socket.cpp
+
+CMakeFiles/srv.dir/Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srv.dir/Socket.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/Socket.cpp > CMakeFiles/srv.dir/Socket.cpp.i
+
+CMakeFiles/srv.dir/Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srv.dir/Socket.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/Socket.cpp -o CMakeFiles/srv.dir/Socket.cpp.s
+
+CMakeFiles/srv.dir/Socket.cpp.o.requires:
+.PHONY : CMakeFiles/srv.dir/Socket.cpp.o.requires
+
+CMakeFiles/srv.dir/Socket.cpp.o.provides: CMakeFiles/srv.dir/Socket.cpp.o.requires
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/Socket.cpp.o.provides.build
+.PHONY : CMakeFiles/srv.dir/Socket.cpp.o.provides
+
+CMakeFiles/srv.dir/Socket.cpp.o.provides.build: CMakeFiles/srv.dir/Socket.cpp.o
 
 # Object files for target srv
 srv_OBJECTS = \
 "CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o" \
-"CMakeFiles/srv.dir/eventhandler.cpp.o" \
-"CMakeFiles/srv.dir/hreactor.cpp.o" \
-"CMakeFiles/srv.dir/socket.cpp.o" \
-"CMakeFiles/srv.dir/ipport.cpp.o"
+"CMakeFiles/srv.dir/Channel.cpp.o" \
+"CMakeFiles/srv.dir/EPoller.cpp.o" \
+"CMakeFiles/srv.dir/EventHandler.cpp.o" \
+"CMakeFiles/srv.dir/HReactor.cpp.o" \
+"CMakeFiles/srv.dir/IpPort.cpp.o" \
+"CMakeFiles/srv.dir/PollerBase.cpp.o" \
+"CMakeFiles/srv.dir/Socket.cpp.o"
 
 # External object files for target srv
 srv_EXTERNAL_OBJECTS =
 
 srv: CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o
-srv: CMakeFiles/srv.dir/eventhandler.cpp.o
-srv: CMakeFiles/srv.dir/hreactor.cpp.o
-srv: CMakeFiles/srv.dir/socket.cpp.o
-srv: CMakeFiles/srv.dir/ipport.cpp.o
+srv: CMakeFiles/srv.dir/Channel.cpp.o
+srv: CMakeFiles/srv.dir/EPoller.cpp.o
+srv: CMakeFiles/srv.dir/EventHandler.cpp.o
+srv: CMakeFiles/srv.dir/HReactor.cpp.o
+srv: CMakeFiles/srv.dir/IpPort.cpp.o
+srv: CMakeFiles/srv.dir/PollerBase.cpp.o
+srv: CMakeFiles/srv.dir/Socket.cpp.o
 srv: CMakeFiles/srv.dir/build.make
 srv: CMakeFiles/srv.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable srv"
@@ -190,10 +265,13 @@ CMakeFiles/srv.dir/build: srv
 .PHONY : CMakeFiles/srv.dir/build
 
 CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/utest_tcpsocket_srv.cpp.o.requires
-CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/eventhandler.cpp.o.requires
-CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/hreactor.cpp.o.requires
-CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/socket.cpp.o.requires
-CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/ipport.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/Channel.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/EPoller.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/EventHandler.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/HReactor.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/IpPort.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/PollerBase.cpp.o.requires
+CMakeFiles/srv.dir/requires: CMakeFiles/srv.dir/Socket.cpp.o.requires
 .PHONY : CMakeFiles/srv.dir/requires
 
 CMakeFiles/srv.dir/clean:

@@ -1,9 +1,12 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/main.dir/application.cpp.o"
-  "CMakeFiles/main.dir/eventhandler.cpp.o"
-  "CMakeFiles/main.dir/hreactor.cpp.o"
-  "CMakeFiles/main.dir/socket.cpp.o"
-  "CMakeFiles/main.dir/ipport.cpp.o"
+  "CMakeFiles/main.dir/Channel.cpp.o"
+  "CMakeFiles/main.dir/EPoller.cpp.o"
+  "CMakeFiles/main.dir/EventHandler.cpp.o"
+  "CMakeFiles/main.dir/HReactor.cpp.o"
+  "CMakeFiles/main.dir/IpPort.cpp.o"
+  "CMakeFiles/main.dir/PollerBase.cpp.o"
+  "CMakeFiles/main.dir/Socket.cpp.o"
   "main.pdb"
   "main"
 )

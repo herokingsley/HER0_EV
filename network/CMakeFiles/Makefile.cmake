@@ -39,7 +39,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cli.dir/DependInfo.cmake"
-  "CMakeFiles/main.dir/DependInfo.cmake"
-  "CMakeFiles/srv.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_cli.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_srv.dir/DependInfo.cmake"
   )
