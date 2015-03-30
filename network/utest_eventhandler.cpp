@@ -10,6 +10,7 @@ class DefaultTcpEventHandler : public EventHandler{
            
     }
 
+    /*
     virtual void handleNewConnection(Channel* channel){
         Socket* socket = channel->getSocket();
         Socket* newSocket = socket->Accept();
@@ -17,7 +18,7 @@ class DefaultTcpEventHandler : public EventHandler{
         Channel* newChannel = new Channel(channel->getReactor(),newSocket,this,Channel::k_ReadEvent);
 
         printf("Default handleNewConnection\n"); 
-    }
+    }*/
 
     virtual void handleWrite(Channel* channel){
         printf("Default handleWrite\n"); 

@@ -11,6 +11,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/herokingsley/HER0_EV/network/IpPort.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/IpPort.cpp.o"
   "/home/herokingsley/HER0_EV/network/PollerBase.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/PollerBase.cpp.o"
   "/home/herokingsley/HER0_EV/network/Socket.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/Socket.cpp.o"
+  "/home/herokingsley/HER0_EV/network/TcpServer.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/TcpServer.cpp.o"
+  "/home/herokingsley/HER0_EV/network/UdpServer.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/UdpServer.cpp.o"
   "/home/herokingsley/HER0_EV/network/utest_epoll_client.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

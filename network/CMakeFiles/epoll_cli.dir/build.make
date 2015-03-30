@@ -233,6 +233,52 @@ CMakeFiles/epoll_cli.dir/Socket.cpp.o.provides: CMakeFiles/epoll_cli.dir/Socket.
 
 CMakeFiles/epoll_cli.dir/Socket.cpp.o.provides.build: CMakeFiles/epoll_cli.dir/Socket.cpp.o
 
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: CMakeFiles/epoll_cli.dir/flags.make
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: TcpServer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/epoll_cli.dir/TcpServer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/epoll_cli.dir/TcpServer.cpp.o -c /home/herokingsley/HER0_EV/network/TcpServer.cpp
+
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/epoll_cli.dir/TcpServer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/TcpServer.cpp > CMakeFiles/epoll_cli.dir/TcpServer.cpp.i
+
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/epoll_cli.dir/TcpServer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/TcpServer.cpp -o CMakeFiles/epoll_cli.dir/TcpServer.cpp.s
+
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.requires:
+.PHONY : CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.requires
+
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.provides: CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.provides.build
+.PHONY : CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.provides
+
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.provides.build: CMakeFiles/epoll_cli.dir/TcpServer.cpp.o
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: CMakeFiles/epoll_cli.dir/flags.make
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: UdpServer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/epoll_cli.dir/UdpServer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/epoll_cli.dir/UdpServer.cpp.o -c /home/herokingsley/HER0_EV/network/UdpServer.cpp
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/epoll_cli.dir/UdpServer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/UdpServer.cpp > CMakeFiles/epoll_cli.dir/UdpServer.cpp.i
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/epoll_cli.dir/UdpServer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/UdpServer.cpp -o CMakeFiles/epoll_cli.dir/UdpServer.cpp.s
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.requires:
+.PHONY : CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.requires
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.provides: CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.provides.build
+.PHONY : CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.provides
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.provides.build: CMakeFiles/epoll_cli.dir/UdpServer.cpp.o
+
 # Object files for target epoll_cli
 epoll_cli_OBJECTS = \
 "CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o" \
@@ -242,7 +288,9 @@ epoll_cli_OBJECTS = \
 "CMakeFiles/epoll_cli.dir/HReactor.cpp.o" \
 "CMakeFiles/epoll_cli.dir/IpPort.cpp.o" \
 "CMakeFiles/epoll_cli.dir/PollerBase.cpp.o" \
-"CMakeFiles/epoll_cli.dir/Socket.cpp.o"
+"CMakeFiles/epoll_cli.dir/Socket.cpp.o" \
+"CMakeFiles/epoll_cli.dir/TcpServer.cpp.o" \
+"CMakeFiles/epoll_cli.dir/UdpServer.cpp.o"
 
 # External object files for target epoll_cli
 epoll_cli_EXTERNAL_OBJECTS =
@@ -255,6 +303,8 @@ epoll_cli: CMakeFiles/epoll_cli.dir/HReactor.cpp.o
 epoll_cli: CMakeFiles/epoll_cli.dir/IpPort.cpp.o
 epoll_cli: CMakeFiles/epoll_cli.dir/PollerBase.cpp.o
 epoll_cli: CMakeFiles/epoll_cli.dir/Socket.cpp.o
+epoll_cli: CMakeFiles/epoll_cli.dir/TcpServer.cpp.o
+epoll_cli: CMakeFiles/epoll_cli.dir/UdpServer.cpp.o
 epoll_cli: CMakeFiles/epoll_cli.dir/build.make
 epoll_cli: CMakeFiles/epoll_cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable epoll_cli"
@@ -272,6 +322,8 @@ CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/HReactor.cpp.o.requi
 CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/IpPort.cpp.o.requires
 CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/PollerBase.cpp.o.requires
 CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/Socket.cpp.o.requires
+CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/TcpServer.cpp.o.requires
+CMakeFiles/epoll_cli.dir/requires: CMakeFiles/epoll_cli.dir/UdpServer.cpp.o.requires
 .PHONY : CMakeFiles/epoll_cli.dir/requires
 
 CMakeFiles/epoll_cli.dir/clean:

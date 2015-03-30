@@ -53,73 +53,38 @@ CMAKE_SOURCE_DIR = /home/herokingsley/HER0_EV/network
 CMAKE_BINARY_DIR = /home/herokingsley/HER0_EV/network
 
 #=============================================================================
-# Target rules for target CMakeFiles/epoll_cli.dir
+# Target rules for target CMakeFiles/udpsrv.dir
 
 # All Build rule for target.
-CMakeFiles/epoll_cli.dir/all:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/depend
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5 6 7 8
-	@echo "Built target epoll_cli"
-.PHONY : CMakeFiles/epoll_cli.dir/all
+CMakeFiles/udpsrv.dir/all:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/depend
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5 6 7 8 9 10
+	@echo "Built target udpsrv"
+.PHONY : CMakeFiles/udpsrv.dir/all
 
 # Include target in all.
-all: CMakeFiles/epoll_cli.dir/all
+all: CMakeFiles/udpsrv.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/epoll_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_cli.dir/all
+CMakeFiles/udpsrv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udpsrv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
-.PHONY : CMakeFiles/epoll_cli.dir/rule
+.PHONY : CMakeFiles/udpsrv.dir/rule
 
 # Convenience name for target.
-epoll_cli: CMakeFiles/epoll_cli.dir/rule
-.PHONY : epoll_cli
+udpsrv: CMakeFiles/udpsrv.dir/rule
+.PHONY : udpsrv
 
 # clean rule for target.
-CMakeFiles/epoll_cli.dir/clean:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/clean
-.PHONY : CMakeFiles/epoll_cli.dir/clean
+CMakeFiles/udpsrv.dir/clean:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/clean
+.PHONY : CMakeFiles/udpsrv.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/epoll_cli.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/epoll_srv.dir
-
-# All Build rule for target.
-CMakeFiles/epoll_srv.dir/all:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/depend
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  9 10 11 12 13 14 15 16 17
-	@echo "Built target epoll_srv"
-.PHONY : CMakeFiles/epoll_srv.dir/all
-
-# Include target in all.
-all: CMakeFiles/epoll_srv.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/epoll_srv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_srv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
-.PHONY : CMakeFiles/epoll_srv.dir/rule
-
-# Convenience name for target.
-epoll_srv: CMakeFiles/epoll_srv.dir/rule
-.PHONY : epoll_srv
-
-# clean rule for target.
-CMakeFiles/epoll_srv.dir/clean:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/clean
-.PHONY : CMakeFiles/epoll_srv.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/epoll_srv.dir/clean
+clean: CMakeFiles/udpsrv.dir/clean
 .PHONY : clean
 
 #=============================================================================

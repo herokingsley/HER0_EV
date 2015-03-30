@@ -8,11 +8,11 @@ const int Channel::k_WriteEvent = EPOLLOUT;
 const int Channel::k_ConnectEvent = EPOLLIN;
 const int Channel::k_ConnectOutEvent = EPOLLERR | EPOLLHUP | EPOLLRDHUP;
 
-Channel::Channel(HReactor* reactor, Socket* socket,EventHandler* eventHandler,int events){
+Channel::Channel(HReactor* reactor, Socket socket,EventHandler* eventHandler){
     this->reactor = reactor;
     this->socket = socket;
     this->eventHandler = eventHandler;
-    this->events = events;
+    //this->events = events;
     
     this->reactor->updateChannel(this);
 }

@@ -16,14 +16,14 @@ int main(){
             pid_t childpid = getpid();
             IPPort ipPort1(ip,12345);
             Socket cliSock(TCP);
-            cliSock.Connect(ipPort1);
+            cliSock.connect(ipPort1);
             printf("connect success");
             writeLen = sprintf(readBuf,"pid: %d,hello world\n",childpid);
             while(1){
 
-                int writeNum = cliSock.Write(readBuf,writeLen);
+                int writeNum = cliSock.write(readBuf,writeLen);
                 printf("cli write len: %d,content: %s\n",writeNum,readBuf);
-                int readNum = cliSock.Read(readBuf,writeLen);
+                int readNum = cliSock.read(readBuf,writeLen);
                 if(readNum == 0){
                     printf("svr lost.\n");
                     break;

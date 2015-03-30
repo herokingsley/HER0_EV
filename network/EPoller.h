@@ -7,7 +7,7 @@
 class EPoller : public Poller{
 public:
     
-    static EPoller* CreateEPoller();
+    static Poller* CreateEPoller();
     EPoller();
 
     virtual ~EPoller(); 

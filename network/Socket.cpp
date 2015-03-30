@@ -31,7 +31,7 @@ void Socket::initSocketWithType(SocketType type){
     }
 }
 
-void Socket::Bind(IPPort& ipPort){
+void Socket::bind(IPPort& ipPort){
     struct sockaddr_in sockAddrIn;
     sockAddrIn.sin_family = AF_INET;
     sockAddrIn.sin_port = ipPort.getNetworkPort();
@@ -41,7 +41,7 @@ void Socket::Bind(IPPort& ipPort){
         perror("bind() error");
 }
 
-void Socket::Connect(IPPort& ipPort){
+void Socket::connect(IPPort& ipPort){
     struct sockaddr_in sockAddrIn;
     sockAddrIn.sin_family = AF_INET;
     sockAddrIn.sin_port = ipPort.getNetworkPort();
@@ -51,13 +51,13 @@ void Socket::Connect(IPPort& ipPort){
         perror("bind() error");
 }
 
-void Socket::Listen(IPPort& ipPort,int maxNum){
+void Socket::listen(IPPort& ipPort,int maxNum){
    int ret = ::listen(socketFd,maxNum);
    if( ret < 0 )
        perror("listen() error.");
 }
 
-Socket* Socket::Accept(){
+Socket* Socket::accept(){
     socklen_t addrlen = sizeof(sockaddr_in);
     struct sockaddr_in sockAddrIn;
 
@@ -65,19 +65,19 @@ Socket* Socket::Accept(){
     return new Socket(TCP,connfd);
 }
 
-ssize_t Socket::Write(char* data,int iLen){
+ssize_t Socket::write(char* data,int iLen){
     return ::write(socketFd,data,iLen);
 }
 
-ssize_t Socket::Read(char* data,int& iLen){
+ssize_t Socket::read(char* data,int& iLen){
     return ::read(socketFd,data,iLen) ;    
 }
 
-bool Socket::ReadLine(char* data,int &iLen){
+bool Socket::readLine(char* data,int &iLen){
     return true;
 }
 
-void Socket::SetNotBlock(bool on){
+void Socket::setNotBlock(bool on){
     int flags = ::fcntl(this->socketFd,F_GETFL,0);
     flags |= O_NONBLOCK;
 
@@ -86,14 +86,25 @@ void Socket::SetNotBlock(bool on){
     //flags = ::fcntl(sockFd,F_GETFD,0);
 }
 
-void Socket::SetTCPNoDelay(bool on){
+void Socket::setTCPNoDelay(bool on){
     //setsockopt(socketFd,SOL_SOCKET,SO_);
 }
 
-void Socket::SetKeepALive(bool on){
+void Socket::setKeepALive(bool on){
     /*
     int keepALive = 1;
     setsockopt(socketFd,SOL_SOCKET,SO_KEEPALIVE,*keepALive,sizeof(int));
     */
 
 }
+
+ssize_t Socket::recv(char* data,int& iLen){
+
+}
+
+ssize_t Socket::send(char* data,int iLen){
+
+}
+
+
+

@@ -3,7 +3,6 @@
 
 #include <cstdio>
 #include "EventHandler.h"
-#include "PollerBase.h"
 
 using namespace std;
 

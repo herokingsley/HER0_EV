@@ -44,6 +44,20 @@ CMakeFiles/epoll_cli.dir/Socket.cpp.o: IpPort.h
 CMakeFiles/epoll_cli.dir/Socket.cpp.o: Socket.cpp
 CMakeFiles/epoll_cli.dir/Socket.cpp.o: Socket.h
 
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: Acceptor.h
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: IpPort.h
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: Socket.h
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: TcpServer.cpp
+CMakeFiles/epoll_cli.dir/TcpServer.cpp.o: TcpServer.h
+
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: Channel.h
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: EventHandler.h
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: HReactor.h
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: IpPort.h
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: Socket.h
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: UdpServer.cpp
+CMakeFiles/epoll_cli.dir/UdpServer.cpp.o: UdpServer.h
+
 CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o: IpPort.h
 CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o: Socket.h
 CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o: utest_epoll_client.cpp

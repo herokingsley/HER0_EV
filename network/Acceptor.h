@@ -3,21 +3,30 @@
 
 #include "Socket.h"
 #include "IpPort.h"
+#include "Channel.h"
 
 
 class DefaultEventHandler;
+class HReactor;
+class Socket;
 
 class Acceptor{
 public:
-    Acceptor();
+    Acceptor(HReactor* reactor, IPPort ipPort,Socket socket,EventHandler* eventHandler);
     ~Acceptor();
-    void handleNewConnection(int socketFd);
+
+    bool isListening(){ return bIsListen;}
+    void listen();
+    void handleNewConnection();
+
 private:
+    bool bIsListen;
+
     HReactor* reactor;
-    IPPort& ipPort;
-    Socket* acceptSocket;
-    Channel* acceptChannel;
+    IPPort ipPort;
+    Socket acceptSocket;
     DefaultEventHandler eventHandler;
+    Channel acceptChannel;
     
 };
 

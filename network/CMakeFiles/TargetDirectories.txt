@@ -1,2 +1,1 @@
-/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_cli.dir
-/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir
+/home/herokingsley/HER0_EV/network/CMakeFiles/udpsrv.dir

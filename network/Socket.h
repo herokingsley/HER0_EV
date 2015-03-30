@@ -29,26 +29,26 @@ public:
    
     Socket(SocketType type,int socketFd);
     Socket(SocketType type);
-    Socket* Accept();
-    //void Accept(IPPort& ipPort);
-    void Bind(IPPort& ipPort);
-    void Connect(IPPort& ipPort);
-    void Listen(IPPort& ipPort,int maxNum);
-    void SetNotBlock(bool on);
-    void SetTCPNoDelay(bool on); 
-    void SetKeepALive(bool on);
+
+    Socket* accept();
+    void bind(IPPort& ipPort);
+    void connect(IPPort& ipPort);
+    void listen(IPPort& ipPort,int maxNum);
+    void setNotBlock(bool on);
+    void setTCPNoDelay(bool on); 
+    void setKeepALive(bool on);
 
 
 
-    ssize_t Write(char* data,int iLen);
-    ssize_t Read(char* data,int& iLen);
-    bool ReadLine(char* data,int& iLen);
+    ssize_t write(char* data,int iLen);
+    ssize_t read(char* data,int& iLen);
+    bool readLine(char* data,int& iLen);
 
-    ssize_t Recv(char* data,int& iLen); 
-    ssize_t Send(char* data,int iLen); 
+    ssize_t recv(char* data,int& iLen); 
+    ssize_t send(char* data,int iLen); 
 
-    ssize_t SendTo(char* data,IPPort& ipPort,int iLen);
-    ssize_t RecvFrom(char* data,IPPort& ipPort,int& iLen);
+    ssize_t sendTo(char* data,IPPort& ipPort,int iLen);
+    ssize_t recvFrom(char* data,IPPort& ipPort,int& iLen);
 
     ~Socket();
 
@@ -66,7 +66,7 @@ private:
 
     SocketType type;
     int socketFd;
-    struct sockaddr_in m_sockAddrIn;
+    struct sockaddr_in peer_sockAddrIn;
 
 };
 

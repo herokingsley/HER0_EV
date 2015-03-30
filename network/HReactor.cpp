@@ -1,9 +1,11 @@
 #include "HReactor.h"
 #include "Channel.h"
+#include "PollerBase.h"
 #include <assert.h>
 
 HReactor::HReactor(){
    m_running = false; 
+   poller = EPoller::CreateEPoller();
 }
 
 HReactor::~HReactor(){

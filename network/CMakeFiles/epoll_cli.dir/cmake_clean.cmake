@@ -7,6 +7,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/epoll_cli.dir/IpPort.cpp.o"
   "CMakeFiles/epoll_cli.dir/PollerBase.cpp.o"
   "CMakeFiles/epoll_cli.dir/Socket.cpp.o"
+  "CMakeFiles/epoll_cli.dir/TcpServer.cpp.o"
+  "CMakeFiles/epoll_cli.dir/UdpServer.cpp.o"
   "epoll_cli.pdb"
   "epoll_cli"
 )

@@ -4,15 +4,15 @@
 #include "Socket.h"
 
 class Channel;
+class IPPort;
 
 class EventHandler{
 public:
 
-
-    virtual void handleRead(Channel* channel) = 0;
-    virtual void handleNewConnection(Channel* channel) = 0;
-    virtual void handleWrite(Channel* channel) = 0;
-    virtual void handleConnectOut() = 0;
+    virtual void onData(char* pData,int length,IPPort IpPort) ;
+    virtual void handleRead(Channel* channel) ;
+    virtual void handleWrite(Channel* channel) ;
+    virtual void handleConnectOut() ;
 
     /**
      * setter

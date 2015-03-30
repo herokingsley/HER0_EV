@@ -5,8 +5,8 @@
 
 const int EPOLL_MAX_LISTENER_NUM = 10000;
 
-EPoller* EPoller::CreateEPoller(){
-    EPoller* epoller = new EPoller();
+Poller* EPoller::CreateEPoller(){
+    Poller* epoller = new EPoller();
     return epoller;
 }
 
@@ -35,7 +35,10 @@ void EPoller::updateChannel(Channel* channel){
         update(EPOLL_CTL_MOD,channel);
     }else{
         printf("add channel in the list\n");
+        //add to the map
+        m_ChannelMap.insert(pair<int,Channel*>(channel->fd(),channel)); 
         update(EPOLL_CTL_ADD,channel);
+        
     }
 }
 
@@ -44,6 +47,9 @@ void EPoller::removeChannel(Channel* channel){
         return ;
     }
     //delete
+    std::map<int,Channel*>::iterator it;
+    it = m_ChannelMap.find(channel->fd());
+    m_ChannelMap.erase(it);
     update(EPOLL_CTL_DEL,channel);
 }
 
@@ -51,7 +57,7 @@ void EPoller::update(int operation, Channel* channel){
     struct epoll_event ev;
     memset(&ev,0,sizeof(struct epoll_event));
     ev.data.ptr = channel;
-    ev.events = channel->getInterestedEvents(); 
+    ev.events = channel->getInterestedEvents() | EPOLLET; 
     ::epoll_ctl(epoll_fd,operation,channel->fd(),&ev);
     printf("operation %d ,fd: %d\n",operation,channel->fd());
     //log

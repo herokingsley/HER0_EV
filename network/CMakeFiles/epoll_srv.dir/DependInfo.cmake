@@ -11,6 +11,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/herokingsley/HER0_EV/network/IpPort.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/IpPort.cpp.o"
   "/home/herokingsley/HER0_EV/network/PollerBase.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/PollerBase.cpp.o"
   "/home/herokingsley/HER0_EV/network/Socket.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/Socket.cpp.o"
+  "/home/herokingsley/HER0_EV/network/TcpServer.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/TcpServer.cpp.o"
+  "/home/herokingsley/HER0_EV/network/UdpServer.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/UdpServer.cpp.o"
   "/home/herokingsley/HER0_EV/network/utest_epoll_server.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.o"
   "/home/herokingsley/HER0_EV/network/utest_eventhandler.cpp" "/home/herokingsley/HER0_EV/network/CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.o"
   )

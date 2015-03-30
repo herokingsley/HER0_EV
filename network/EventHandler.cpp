@@ -5,10 +5,6 @@ void EventHandler::handleRead(Channel* channel){
     printf("base eventhandle read\n");
 }
 
-void EventHandler::handleNewConnection(Channel* channel){
-    printf("base eventhandle new connection\n");
-
-}
 
 void EventHandler::handleWrite(Channel* channel){
     printf("base eventhandle write\n");
@@ -17,5 +13,9 @@ void EventHandler::handleWrite(Channel* channel){
 
 void EventHandler::handleConnectOut(){
     printf("base eventhandle out\n");
+
+}
+
+void EventHandler::onData(char* pData,int length){
 
 }

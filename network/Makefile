@@ -99,38 +99,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named epoll_cli
+# Target rules for targets named udpsrv
 
 # Build rule for target.
-epoll_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 epoll_cli
-.PHONY : epoll_cli
+udpsrv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udpsrv
+.PHONY : udpsrv
 
 # fast build rule for target.
-epoll_cli/fast:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/build
-.PHONY : epoll_cli/fast
-
-#=============================================================================
-# Target rules for targets named epoll_srv
-
-# Build rule for target.
-epoll_srv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 epoll_srv
-.PHONY : epoll_srv
-
-# fast build rule for target.
-epoll_srv/fast:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/build
-.PHONY : epoll_srv/fast
+udpsrv/fast:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/build
+.PHONY : udpsrv/fast
 
 Channel.o: Channel.cpp.o
 .PHONY : Channel.o
 
 # target to build an object file
 Channel.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.o
 .PHONY : Channel.cpp.o
 
 Channel.i: Channel.cpp.i
@@ -138,8 +124,7 @@ Channel.i: Channel.cpp.i
 
 # target to preprocess a source file
 Channel.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.i
 .PHONY : Channel.cpp.i
 
 Channel.s: Channel.cpp.s
@@ -147,8 +132,7 @@ Channel.s: Channel.cpp.s
 
 # target to generate assembly for a file
 Channel.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Channel.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Channel.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.s
 .PHONY : Channel.cpp.s
 
 EPoller.o: EPoller.cpp.o
@@ -156,8 +140,7 @@ EPoller.o: EPoller.cpp.o
 
 # target to build an object file
 EPoller.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.o
 .PHONY : EPoller.cpp.o
 
 EPoller.i: EPoller.cpp.i
@@ -165,8 +148,7 @@ EPoller.i: EPoller.cpp.i
 
 # target to preprocess a source file
 EPoller.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.i
 .PHONY : EPoller.cpp.i
 
 EPoller.s: EPoller.cpp.s
@@ -174,8 +156,7 @@ EPoller.s: EPoller.cpp.s
 
 # target to generate assembly for a file
 EPoller.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EPoller.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EPoller.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.s
 .PHONY : EPoller.cpp.s
 
 EventHandler.o: EventHandler.cpp.o
@@ -183,8 +164,7 @@ EventHandler.o: EventHandler.cpp.o
 
 # target to build an object file
 EventHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.o
 .PHONY : EventHandler.cpp.o
 
 EventHandler.i: EventHandler.cpp.i
@@ -192,8 +172,7 @@ EventHandler.i: EventHandler.cpp.i
 
 # target to preprocess a source file
 EventHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.i
 .PHONY : EventHandler.cpp.i
 
 EventHandler.s: EventHandler.cpp.s
@@ -201,8 +180,7 @@ EventHandler.s: EventHandler.cpp.s
 
 # target to generate assembly for a file
 EventHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/EventHandler.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/EventHandler.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.s
 .PHONY : EventHandler.cpp.s
 
 HReactor.o: HReactor.cpp.o
@@ -210,8 +188,7 @@ HReactor.o: HReactor.cpp.o
 
 # target to build an object file
 HReactor.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.o
 .PHONY : HReactor.cpp.o
 
 HReactor.i: HReactor.cpp.i
@@ -219,8 +196,7 @@ HReactor.i: HReactor.cpp.i
 
 # target to preprocess a source file
 HReactor.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.i
 .PHONY : HReactor.cpp.i
 
 HReactor.s: HReactor.cpp.s
@@ -228,8 +204,7 @@ HReactor.s: HReactor.cpp.s
 
 # target to generate assembly for a file
 HReactor.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/HReactor.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/HReactor.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.s
 .PHONY : HReactor.cpp.s
 
 IpPort.o: IpPort.cpp.o
@@ -237,8 +212,7 @@ IpPort.o: IpPort.cpp.o
 
 # target to build an object file
 IpPort.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.o
 .PHONY : IpPort.cpp.o
 
 IpPort.i: IpPort.cpp.i
@@ -246,8 +220,7 @@ IpPort.i: IpPort.cpp.i
 
 # target to preprocess a source file
 IpPort.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.i
 .PHONY : IpPort.cpp.i
 
 IpPort.s: IpPort.cpp.s
@@ -255,8 +228,7 @@ IpPort.s: IpPort.cpp.s
 
 # target to generate assembly for a file
 IpPort.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/IpPort.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/IpPort.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.s
 .PHONY : IpPort.cpp.s
 
 PollerBase.o: PollerBase.cpp.o
@@ -264,8 +236,7 @@ PollerBase.o: PollerBase.cpp.o
 
 # target to build an object file
 PollerBase.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.o
 .PHONY : PollerBase.cpp.o
 
 PollerBase.i: PollerBase.cpp.i
@@ -273,8 +244,7 @@ PollerBase.i: PollerBase.cpp.i
 
 # target to preprocess a source file
 PollerBase.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.i
 .PHONY : PollerBase.cpp.i
 
 PollerBase.s: PollerBase.cpp.s
@@ -282,8 +252,7 @@ PollerBase.s: PollerBase.cpp.s
 
 # target to generate assembly for a file
 PollerBase.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/PollerBase.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/PollerBase.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.s
 .PHONY : PollerBase.cpp.s
 
 Socket.o: Socket.cpp.o
@@ -291,8 +260,7 @@ Socket.o: Socket.cpp.o
 
 # target to build an object file
 Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.o
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.o
 .PHONY : Socket.cpp.o
 
 Socket.i: Socket.cpp.i
@@ -300,8 +268,7 @@ Socket.i: Socket.cpp.i
 
 # target to preprocess a source file
 Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.i
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.i
 .PHONY : Socket.cpp.i
 
 Socket.s: Socket.cpp.s
@@ -309,81 +276,80 @@ Socket.s: Socket.cpp.s
 
 # target to generate assembly for a file
 Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/Socket.cpp.s
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/Socket.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.s
 .PHONY : Socket.cpp.s
 
-utest_epoll_client.o: utest_epoll_client.cpp.o
-.PHONY : utest_epoll_client.o
+TcpServer.o: TcpServer.cpp.o
+.PHONY : TcpServer.o
 
 # target to build an object file
-utest_epoll_client.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.o
-.PHONY : utest_epoll_client.cpp.o
+TcpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.o
+.PHONY : TcpServer.cpp.o
 
-utest_epoll_client.i: utest_epoll_client.cpp.i
-.PHONY : utest_epoll_client.i
+TcpServer.i: TcpServer.cpp.i
+.PHONY : TcpServer.i
 
 # target to preprocess a source file
-utest_epoll_client.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.i
-.PHONY : utest_epoll_client.cpp.i
+TcpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.i
+.PHONY : TcpServer.cpp.i
 
-utest_epoll_client.s: utest_epoll_client.cpp.s
-.PHONY : utest_epoll_client.s
+TcpServer.s: TcpServer.cpp.s
+.PHONY : TcpServer.s
 
 # target to generate assembly for a file
-utest_epoll_client.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_cli.dir/build.make CMakeFiles/epoll_cli.dir/utest_epoll_client.cpp.s
-.PHONY : utest_epoll_client.cpp.s
+TcpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.s
+.PHONY : TcpServer.cpp.s
 
-utest_epoll_server.o: utest_epoll_server.cpp.o
-.PHONY : utest_epoll_server.o
+UdpServer.o: UdpServer.cpp.o
+.PHONY : UdpServer.o
 
 # target to build an object file
-utest_epoll_server.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.o
-.PHONY : utest_epoll_server.cpp.o
+UdpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.o
+.PHONY : UdpServer.cpp.o
 
-utest_epoll_server.i: utest_epoll_server.cpp.i
-.PHONY : utest_epoll_server.i
+UdpServer.i: UdpServer.cpp.i
+.PHONY : UdpServer.i
 
 # target to preprocess a source file
-utest_epoll_server.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.i
-.PHONY : utest_epoll_server.cpp.i
+UdpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.i
+.PHONY : UdpServer.cpp.i
 
-utest_epoll_server.s: utest_epoll_server.cpp.s
-.PHONY : utest_epoll_server.s
+UdpServer.s: UdpServer.cpp.s
+.PHONY : UdpServer.s
 
 # target to generate assembly for a file
-utest_epoll_server.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_epoll_server.cpp.s
-.PHONY : utest_epoll_server.cpp.s
+UdpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.s
+.PHONY : UdpServer.cpp.s
 
-utest_eventhandler.o: utest_eventhandler.cpp.o
-.PHONY : utest_eventhandler.o
+utest_udpserver.o: utest_udpserver.cpp.o
+.PHONY : utest_udpserver.o
 
 # target to build an object file
-utest_eventhandler.cpp.o:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.o
-.PHONY : utest_eventhandler.cpp.o
+utest_udpserver.cpp.o:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o
+.PHONY : utest_udpserver.cpp.o
 
-utest_eventhandler.i: utest_eventhandler.cpp.i
-.PHONY : utest_eventhandler.i
+utest_udpserver.i: utest_udpserver.cpp.i
+.PHONY : utest_udpserver.i
 
 # target to preprocess a source file
-utest_eventhandler.cpp.i:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.i
-.PHONY : utest_eventhandler.cpp.i
+utest_udpserver.cpp.i:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/utest_udpserver.cpp.i
+.PHONY : utest_udpserver.cpp.i
 
-utest_eventhandler.s: utest_eventhandler.cpp.s
-.PHONY : utest_eventhandler.s
+utest_udpserver.s: utest_udpserver.cpp.s
+.PHONY : utest_udpserver.s
 
 # target to generate assembly for a file
-utest_eventhandler.cpp.s:
-	$(MAKE) -f CMakeFiles/epoll_srv.dir/build.make CMakeFiles/epoll_srv.dir/utest_eventhandler.cpp.s
-.PHONY : utest_eventhandler.cpp.s
+utest_udpserver.cpp.s:
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/utest_udpserver.cpp.s
+.PHONY : utest_udpserver.cpp.s
 
 # Help Target
 help:
@@ -392,9 +358,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... epoll_cli"
-	@echo "... epoll_srv"
 	@echo "... rebuild_cache"
+	@echo "... udpsrv"
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
@@ -416,15 +381,15 @@ help:
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"
-	@echo "... utest_epoll_client.o"
-	@echo "... utest_epoll_client.i"
-	@echo "... utest_epoll_client.s"
-	@echo "... utest_epoll_server.o"
-	@echo "... utest_epoll_server.i"
-	@echo "... utest_epoll_server.s"
-	@echo "... utest_eventhandler.o"
-	@echo "... utest_eventhandler.i"
-	@echo "... utest_eventhandler.s"
+	@echo "... TcpServer.o"
+	@echo "... TcpServer.i"
+	@echo "... TcpServer.s"
+	@echo "... UdpServer.o"
+	@echo "... UdpServer.i"
+	@echo "... UdpServer.s"
+	@echo "... utest_udpserver.o"
+	@echo "... utest_udpserver.i"
+	@echo "... utest_udpserver.s"
 .PHONY : help
 
 
