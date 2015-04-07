@@ -1,5 +1,6 @@
 #include "EventHandler.h"
 #include "Channel.h"
+#include "IpPort.h"
 
 void EventHandler::handleRead(Channel* channel){
     printf("base eventhandle read\n");
@@ -16,6 +17,6 @@ void EventHandler::handleConnectOut(){
 
 }
 
-void EventHandler::onData(char* pData,int length){
+void EventHandler::onData(char* pData,int length,IPPort ipPort){
 
 }

@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o"
+  "CMakeFiles/udpsrv.dir/Acceptor.cpp.o"
   "CMakeFiles/udpsrv.dir/Channel.cpp.o"
   "CMakeFiles/udpsrv.dir/EPoller.cpp.o"
   "CMakeFiles/udpsrv.dir/EventHandler.cpp.o"
@@ -7,7 +8,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/udpsrv.dir/IpPort.cpp.o"
   "CMakeFiles/udpsrv.dir/PollerBase.cpp.o"
   "CMakeFiles/udpsrv.dir/Socket.cpp.o"
-  "CMakeFiles/udpsrv.dir/TcpServer.cpp.o"
   "CMakeFiles/udpsrv.dir/UdpServer.cpp.o"
   "udpsrv.pdb"
   "udpsrv"

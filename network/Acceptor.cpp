@@ -19,26 +19,30 @@ private:
 };
 */
 
-Acceptor::Acceptor(HReactor* reactor,IPPort& ipPort, Socket socket,EventHandler* eventHandler):
+Acceptor::Acceptor(HReactor* reactor,IPPort& ipPort,EventHandler* eventHandler):
     reactor(reactor),
     ipPort(ipPort),
-    acceptSocket(socket),
-    eventHandler(eventHandler),
-    Channel(reactor,&acceptSocket,eventHandler)
+    acceptChannel(reactor,TCP,eventHandler),
+    acceptSocket(&(acceptChannel.getSocket()))
 {
+    acceptChannel.enableRead(); 
 }
 
 Acceptor::~Acceptor(){
+    acceptChannel.disableRead();
+}
 
+void Acceptor::bind(){
+    printf("acceptor binding,sock fd:%d\n",acceptChannel.fd());
+    acceptSocket->bind(ipPort);
 }
 
 void Acceptor::listen(){
-    if(!bIsListen){
+    if(bIsListen){
         return;
     }
     bIsListen = true;
-    acceptSocket.listen(ipPort,MAX_LISTEN_NUM);
-    channel.enableRead(); 
+    acceptSocket->listen(ipPort,MAX_LISTEN_NUM);
 }
 
      

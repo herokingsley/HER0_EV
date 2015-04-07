@@ -1,8 +1,11 @@
 #include "TcpServer.h"
+#include "HReactor.h"
+#include "IpPort.h"
 
-TcpServer::TcpServer(HReactor* reactor,IpPort& ipPort){
-    this->reactor = reactor;
-    this->ipPort = ipPort;
+TcpServer::TcpServer(HReactor* reactor,IPPort& ipPort):
+    reactor(reactor),
+    ipPort(ipPort)
+{
 }
 
 

@@ -1,7 +1,6 @@
 #include "HReactor.h"
 #include "IpPort.h"
 #include "Channel.h"
-#include "Acceptor.h"
 #include "UdpServer.h"
 
 #include <cstdio>
@@ -20,11 +19,12 @@ void UdpDefaultHandler::handleRead(Channel* channel){
     struct sockaddr_in sockAddrIn;
     socklen_t cli_len = sizeof(sockAddrIn);
     int socketFd = channel->fd();
-    iPacketLen =  recvfrom(socketFd, udpPacket, MAX_UDP_PACKET, 0, (struct sockaddr *)&sockAddrIn, &cli_len);
-    IPPort ipPort("",12345);
+    iPacketLen =  ::recvfrom(socketFd, udpPacket, MAX_UDP_PACKET, 0, (struct sockaddr *)&sockAddrIn, &cli_len);
+    IPPort ipPort("127.0.0.1",12345);
 
     //callback
    if(customHandler){
+       printf("custom callback\n");
        customHandler->onData(udpPacket,iPacketLen,ipPort);
    }
 }
@@ -33,11 +33,12 @@ UdpServer::UdpServer(HReactor* reactor,IPPort& ipPort, EventHandler* eventHandle
     reactor(reactor),
     ipPort(ipPort),
     handler(eventHandler),
-    acceptor(reactor,ipPort, Socket(UDP),eventHandler),
+    defaultHandler(new UdpDefaultHandler(eventHandler)),
+    serverChannel(reactor,UDP,defaultHandler),
+    //acceptor(reactor,ipPort,(new Socket(UDP)),eventHandler),
     bIsListen(false)
 {
     printf("Create a UDP server.\n");
-    defaultHandler = new UdpDefaultHandler();
 }
 
 UdpServer::~UdpServer(){
@@ -46,8 +47,9 @@ UdpServer::~UdpServer(){
 }
 
 void UdpServer::start(){
-    this->listen();
-    this->reactor->run();
+    this->serverChannel.getSocket().bind(ipPort);
+    this->serverChannel.enableRead();
+    this->reactor->start();
 }
 
 void UdpServer::stop(){
@@ -55,7 +57,7 @@ void UdpServer::stop(){
 }
 
 void UdpServer::listen(){
-    acceptor.listen();  
+    //acceptor.listen();  
 }
 
 

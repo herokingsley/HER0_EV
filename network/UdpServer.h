@@ -2,7 +2,7 @@
 #define __HEVENT_NETWORK_UDPSERVER__
 
 #include "EventHandler.h"
-#include "Acceptor.cpp"
+#include "Acceptor.h"
 
 class HReactor;
 class IPPort;
@@ -11,7 +11,7 @@ class Channel;
 class UdpDefaultHandler:public EventHandler{
 public:
     UdpDefaultHandler(EventHandler* eventhandler);
-    void handleRead(Channel* channel);    
+    virtual void handleRead(Channel* channel);    
 private:
     EventHandler* customHandler;
 };
@@ -31,7 +31,8 @@ private:
     IPPort ipPort; 
     EventHandler* defaultHandler;
     EventHandler* handler;
-    Acceptor acceptor;
+    Channel serverChannel;
+    //Acceptor acceptor;
     bool bIsListen;
 };
 

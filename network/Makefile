@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named udpcli
+
+# Build rule for target.
+udpcli: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udpcli
+.PHONY : udpcli
+
+# fast build rule for target.
+udpcli/fast:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/build
+.PHONY : udpcli/fast
+
+#=============================================================================
 # Target rules for targets named udpsrv
 
 # Build rule for target.
@@ -111,11 +124,39 @@ udpsrv/fast:
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/build
 .PHONY : udpsrv/fast
 
+Acceptor.o: Acceptor.cpp.o
+.PHONY : Acceptor.o
+
+# target to build an object file
+Acceptor.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Acceptor.cpp.o
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Acceptor.cpp.o
+.PHONY : Acceptor.cpp.o
+
+Acceptor.i: Acceptor.cpp.i
+.PHONY : Acceptor.i
+
+# target to preprocess a source file
+Acceptor.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Acceptor.cpp.i
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Acceptor.cpp.i
+.PHONY : Acceptor.cpp.i
+
+Acceptor.s: Acceptor.cpp.s
+.PHONY : Acceptor.s
+
+# target to generate assembly for a file
+Acceptor.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Acceptor.cpp.s
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Acceptor.cpp.s
+.PHONY : Acceptor.cpp.s
+
 Channel.o: Channel.cpp.o
 .PHONY : Channel.o
 
 # target to build an object file
 Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Channel.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.o
 .PHONY : Channel.cpp.o
 
@@ -124,6 +165,7 @@ Channel.i: Channel.cpp.i
 
 # target to preprocess a source file
 Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Channel.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.i
 .PHONY : Channel.cpp.i
 
@@ -132,6 +174,7 @@ Channel.s: Channel.cpp.s
 
 # target to generate assembly for a file
 Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Channel.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Channel.cpp.s
 .PHONY : Channel.cpp.s
 
@@ -140,6 +183,7 @@ EPoller.o: EPoller.cpp.o
 
 # target to build an object file
 EPoller.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EPoller.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.o
 .PHONY : EPoller.cpp.o
 
@@ -148,6 +192,7 @@ EPoller.i: EPoller.cpp.i
 
 # target to preprocess a source file
 EPoller.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EPoller.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.i
 .PHONY : EPoller.cpp.i
 
@@ -156,6 +201,7 @@ EPoller.s: EPoller.cpp.s
 
 # target to generate assembly for a file
 EPoller.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EPoller.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EPoller.cpp.s
 .PHONY : EPoller.cpp.s
 
@@ -164,6 +210,7 @@ EventHandler.o: EventHandler.cpp.o
 
 # target to build an object file
 EventHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EventHandler.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.o
 .PHONY : EventHandler.cpp.o
 
@@ -172,6 +219,7 @@ EventHandler.i: EventHandler.cpp.i
 
 # target to preprocess a source file
 EventHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EventHandler.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.i
 .PHONY : EventHandler.cpp.i
 
@@ -180,6 +228,7 @@ EventHandler.s: EventHandler.cpp.s
 
 # target to generate assembly for a file
 EventHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/EventHandler.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/EventHandler.cpp.s
 .PHONY : EventHandler.cpp.s
 
@@ -188,6 +237,7 @@ HReactor.o: HReactor.cpp.o
 
 # target to build an object file
 HReactor.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/HReactor.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.o
 .PHONY : HReactor.cpp.o
 
@@ -196,6 +246,7 @@ HReactor.i: HReactor.cpp.i
 
 # target to preprocess a source file
 HReactor.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/HReactor.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.i
 .PHONY : HReactor.cpp.i
 
@@ -204,6 +255,7 @@ HReactor.s: HReactor.cpp.s
 
 # target to generate assembly for a file
 HReactor.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/HReactor.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/HReactor.cpp.s
 .PHONY : HReactor.cpp.s
 
@@ -212,6 +264,7 @@ IpPort.o: IpPort.cpp.o
 
 # target to build an object file
 IpPort.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/IpPort.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.o
 .PHONY : IpPort.cpp.o
 
@@ -220,6 +273,7 @@ IpPort.i: IpPort.cpp.i
 
 # target to preprocess a source file
 IpPort.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/IpPort.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.i
 .PHONY : IpPort.cpp.i
 
@@ -228,6 +282,7 @@ IpPort.s: IpPort.cpp.s
 
 # target to generate assembly for a file
 IpPort.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/IpPort.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/IpPort.cpp.s
 .PHONY : IpPort.cpp.s
 
@@ -236,6 +291,7 @@ PollerBase.o: PollerBase.cpp.o
 
 # target to build an object file
 PollerBase.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/PollerBase.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.o
 .PHONY : PollerBase.cpp.o
 
@@ -244,6 +300,7 @@ PollerBase.i: PollerBase.cpp.i
 
 # target to preprocess a source file
 PollerBase.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/PollerBase.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.i
 .PHONY : PollerBase.cpp.i
 
@@ -252,6 +309,7 @@ PollerBase.s: PollerBase.cpp.s
 
 # target to generate assembly for a file
 PollerBase.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/PollerBase.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/PollerBase.cpp.s
 .PHONY : PollerBase.cpp.s
 
@@ -260,6 +318,7 @@ Socket.o: Socket.cpp.o
 
 # target to build an object file
 Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Socket.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.o
 .PHONY : Socket.cpp.o
 
@@ -268,6 +327,7 @@ Socket.i: Socket.cpp.i
 
 # target to preprocess a source file
 Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Socket.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.i
 .PHONY : Socket.cpp.i
 
@@ -276,38 +336,16 @@ Socket.s: Socket.cpp.s
 
 # target to generate assembly for a file
 Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/Socket.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Socket.cpp.s
 .PHONY : Socket.cpp.s
-
-TcpServer.o: TcpServer.cpp.o
-.PHONY : TcpServer.o
-
-# target to build an object file
-TcpServer.cpp.o:
-	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.o
-.PHONY : TcpServer.cpp.o
-
-TcpServer.i: TcpServer.cpp.i
-.PHONY : TcpServer.i
-
-# target to preprocess a source file
-TcpServer.cpp.i:
-	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.i
-.PHONY : TcpServer.cpp.i
-
-TcpServer.s: TcpServer.cpp.s
-.PHONY : TcpServer.s
-
-# target to generate assembly for a file
-TcpServer.cpp.s:
-	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.s
-.PHONY : TcpServer.cpp.s
 
 UdpServer.o: UdpServer.cpp.o
 .PHONY : UdpServer.o
 
 # target to build an object file
 UdpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/UdpServer.cpp.o
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.o
 .PHONY : UdpServer.cpp.o
 
@@ -316,6 +354,7 @@ UdpServer.i: UdpServer.cpp.i
 
 # target to preprocess a source file
 UdpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/UdpServer.cpp.i
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.i
 .PHONY : UdpServer.cpp.i
 
@@ -324,6 +363,7 @@ UdpServer.s: UdpServer.cpp.s
 
 # target to generate assembly for a file
 UdpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/UdpServer.cpp.s
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/UdpServer.cpp.s
 .PHONY : UdpServer.cpp.s
 
@@ -351,6 +391,30 @@ utest_udpserver.cpp.s:
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/utest_udpserver.cpp.s
 .PHONY : utest_udpserver.cpp.s
 
+utest_udpsocket_cli.o: utest_udpsocket_cli.cpp.o
+.PHONY : utest_udpsocket_cli.o
+
+# target to build an object file
+utest_udpsocket_cli.cpp.o:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/utest_udpsocket_cli.cpp.o
+.PHONY : utest_udpsocket_cli.cpp.o
+
+utest_udpsocket_cli.i: utest_udpsocket_cli.cpp.i
+.PHONY : utest_udpsocket_cli.i
+
+# target to preprocess a source file
+utest_udpsocket_cli.cpp.i:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/utest_udpsocket_cli.cpp.i
+.PHONY : utest_udpsocket_cli.cpp.i
+
+utest_udpsocket_cli.s: utest_udpsocket_cli.cpp.s
+.PHONY : utest_udpsocket_cli.s
+
+# target to generate assembly for a file
+utest_udpsocket_cli.cpp.s:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/utest_udpsocket_cli.cpp.s
+.PHONY : utest_udpsocket_cli.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -359,7 +423,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... udpcli"
 	@echo "... udpsrv"
+	@echo "... Acceptor.o"
+	@echo "... Acceptor.i"
+	@echo "... Acceptor.s"
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
@@ -381,15 +449,15 @@ help:
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"
-	@echo "... TcpServer.o"
-	@echo "... TcpServer.i"
-	@echo "... TcpServer.s"
 	@echo "... UdpServer.o"
 	@echo "... UdpServer.i"
 	@echo "... UdpServer.s"
 	@echo "... utest_udpserver.o"
 	@echo "... utest_udpserver.i"
 	@echo "... utest_udpserver.s"
+	@echo "... utest_udpsocket_cli.o"
+	@echo "... utest_udpsocket_cli.i"
+	@echo "... utest_udpsocket_cli.s"
 .PHONY : help
 
 

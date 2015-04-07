@@ -8,10 +8,19 @@ const int Channel::k_WriteEvent = EPOLLOUT;
 const int Channel::k_ConnectEvent = EPOLLIN;
 const int Channel::k_ConnectOutEvent = EPOLLERR | EPOLLHUP | EPOLLRDHUP;
 
-Channel::Channel(HReactor* reactor, Socket socket,EventHandler* eventHandler){
-    this->reactor = reactor;
-    this->socket = socket;
-    this->eventHandler = eventHandler;
+Channel::Channel(HReactor* reactor,SocketType type,EventHandler* eventHandler):
+    reactor(reactor),
+    socket(type),
+    eventHandler(eventHandler)
+{
+
+}
+
+Channel::Channel(HReactor* reactor,SocketType type, int socketFd,EventHandler* eventHandler):
+    reactor(reactor),
+    socket(type,socketFd),
+    eventHandler(eventHandler)
+{
     //this->events = events;
     
     this->reactor->updateChannel(this);
@@ -24,12 +33,8 @@ Channel::~Channel(){
 
 void Channel::handleEvent(){
    // connection esliabment
-   printf("r_events value:%d\n",r_events);
+   //printf("r_events value:%d\n",r_events);
 
-    if(r_events & k_ConnectEvent){
-        this->eventHandler->handleNewConnection(this);
-    }
-        
    // read event
    if( r_events & k_ReadEvent){
         this->eventHandler->handleRead(this);
@@ -49,5 +54,5 @@ void Channel::handleEvent(){
 }
 
 void Channel::update(){
-
+    this->reactor->updateChannel(this);
 }

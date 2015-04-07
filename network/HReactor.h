@@ -3,10 +3,12 @@
 
 #include <cstdio>
 #include "EventHandler.h"
+#include <vector>
 
 using namespace std;
 
 class Channel;
+class Poller;
 
 class HReactor{
 public:
@@ -30,7 +32,7 @@ private:
  
     Poller* poller;
     //Channel list;
-    vector<Channel*> m_channelList;
+    std::vector<Channel*> m_channelList;
 
 }; 
 

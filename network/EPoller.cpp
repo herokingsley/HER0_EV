@@ -36,7 +36,7 @@ void EPoller::updateChannel(Channel* channel){
     }else{
         printf("add channel in the list\n");
         //add to the map
-        m_ChannelMap.insert(pair<int,Channel*>(channel->fd(),channel)); 
+        m_ChannelMap.insert(std::pair<int,Channel*>(channel->fd(),channel)); 
         update(EPOLL_CTL_ADD,channel);
         
     }
@@ -57,7 +57,7 @@ void EPoller::update(int operation, Channel* channel){
     struct epoll_event ev;
     memset(&ev,0,sizeof(struct epoll_event));
     ev.data.ptr = channel;
-    ev.events = channel->getInterestedEvents() | EPOLLET; 
+    ev.events = channel->getInterestedEvents() ;//| EPOLLET; 
     ::epoll_ctl(epoll_fd,operation,channel->fd(),&ev);
     printf("operation %d ,fd: %d\n",operation,channel->fd());
     //log
@@ -66,7 +66,7 @@ void EPoller::update(int operation, Channel* channel){
 void EPoller::waitForEvent(int timeInterval, std::vector<Channel*>& channelList){
     
     int eventsNum = ::epoll_wait(epoll_fd,events,10000,timeInterval);
-    printf("epoll_wait event num:%d\n",eventsNum);
+    //printf("epoll_wait event num:%d\n",eventsNum);
     
     fillForActiveChannel(eventsNum,channelList,events);
 }

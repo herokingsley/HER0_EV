@@ -72,9 +72,32 @@ CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o.provides: CMakeFiles/udpsrv.dir/utes
 
 CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o.provides.build: CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o
 
+CMakeFiles/udpsrv.dir/Acceptor.cpp.o: CMakeFiles/udpsrv.dir/flags.make
+CMakeFiles/udpsrv.dir/Acceptor.cpp.o: Acceptor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/Acceptor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/Acceptor.cpp.o -c /home/herokingsley/HER0_EV/network/Acceptor.cpp
+
+CMakeFiles/udpsrv.dir/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/udpsrv.dir/Acceptor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/Acceptor.cpp > CMakeFiles/udpsrv.dir/Acceptor.cpp.i
+
+CMakeFiles/udpsrv.dir/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/udpsrv.dir/Acceptor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/Acceptor.cpp -o CMakeFiles/udpsrv.dir/Acceptor.cpp.s
+
+CMakeFiles/udpsrv.dir/Acceptor.cpp.o.requires:
+.PHONY : CMakeFiles/udpsrv.dir/Acceptor.cpp.o.requires
+
+CMakeFiles/udpsrv.dir/Acceptor.cpp.o.provides: CMakeFiles/udpsrv.dir/Acceptor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/Acceptor.cpp.o.provides.build
+.PHONY : CMakeFiles/udpsrv.dir/Acceptor.cpp.o.provides
+
+CMakeFiles/udpsrv.dir/Acceptor.cpp.o.provides.build: CMakeFiles/udpsrv.dir/Acceptor.cpp.o
+
 CMakeFiles/udpsrv.dir/Channel.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/Channel.cpp.o: Channel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/Channel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/Channel.cpp.o -c /home/herokingsley/HER0_EV/network/Channel.cpp
 
@@ -97,7 +120,7 @@ CMakeFiles/udpsrv.dir/Channel.cpp.o.provides.build: CMakeFiles/udpsrv.dir/Channe
 
 CMakeFiles/udpsrv.dir/EPoller.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/EPoller.cpp.o: EPoller.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/EPoller.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/EPoller.cpp.o -c /home/herokingsley/HER0_EV/network/EPoller.cpp
 
@@ -120,7 +143,7 @@ CMakeFiles/udpsrv.dir/EPoller.cpp.o.provides.build: CMakeFiles/udpsrv.dir/EPolle
 
 CMakeFiles/udpsrv.dir/EventHandler.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/EventHandler.cpp.o: EventHandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/EventHandler.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/EventHandler.cpp.o -c /home/herokingsley/HER0_EV/network/EventHandler.cpp
 
@@ -143,7 +166,7 @@ CMakeFiles/udpsrv.dir/EventHandler.cpp.o.provides.build: CMakeFiles/udpsrv.dir/E
 
 CMakeFiles/udpsrv.dir/HReactor.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/HReactor.cpp.o: HReactor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/HReactor.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/HReactor.cpp.o -c /home/herokingsley/HER0_EV/network/HReactor.cpp
 
@@ -166,7 +189,7 @@ CMakeFiles/udpsrv.dir/HReactor.cpp.o.provides.build: CMakeFiles/udpsrv.dir/HReac
 
 CMakeFiles/udpsrv.dir/IpPort.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/IpPort.cpp.o: IpPort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/IpPort.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/IpPort.cpp.o -c /home/herokingsley/HER0_EV/network/IpPort.cpp
 
@@ -189,7 +212,7 @@ CMakeFiles/udpsrv.dir/IpPort.cpp.o.provides.build: CMakeFiles/udpsrv.dir/IpPort.
 
 CMakeFiles/udpsrv.dir/PollerBase.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/PollerBase.cpp.o: PollerBase.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/PollerBase.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/PollerBase.cpp.o -c /home/herokingsley/HER0_EV/network/PollerBase.cpp
 
@@ -212,7 +235,7 @@ CMakeFiles/udpsrv.dir/PollerBase.cpp.o.provides.build: CMakeFiles/udpsrv.dir/Pol
 
 CMakeFiles/udpsrv.dir/Socket.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/Socket.cpp.o: Socket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/Socket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/Socket.cpp.o -c /home/herokingsley/HER0_EV/network/Socket.cpp
 
@@ -232,29 +255,6 @@ CMakeFiles/udpsrv.dir/Socket.cpp.o.provides: CMakeFiles/udpsrv.dir/Socket.cpp.o.
 .PHONY : CMakeFiles/udpsrv.dir/Socket.cpp.o.provides
 
 CMakeFiles/udpsrv.dir/Socket.cpp.o.provides.build: CMakeFiles/udpsrv.dir/Socket.cpp.o
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.o: CMakeFiles/udpsrv.dir/flags.make
-CMakeFiles/udpsrv.dir/TcpServer.cpp.o: TcpServer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/udpsrv.dir/TcpServer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/udpsrv.dir/TcpServer.cpp.o -c /home/herokingsley/HER0_EV/network/TcpServer.cpp
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/udpsrv.dir/TcpServer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/herokingsley/HER0_EV/network/TcpServer.cpp > CMakeFiles/udpsrv.dir/TcpServer.cpp.i
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/udpsrv.dir/TcpServer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/herokingsley/HER0_EV/network/TcpServer.cpp -o CMakeFiles/udpsrv.dir/TcpServer.cpp.s
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.o.requires:
-.PHONY : CMakeFiles/udpsrv.dir/TcpServer.cpp.o.requires
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.o.provides: CMakeFiles/udpsrv.dir/TcpServer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/TcpServer.cpp.o.provides.build
-.PHONY : CMakeFiles/udpsrv.dir/TcpServer.cpp.o.provides
-
-CMakeFiles/udpsrv.dir/TcpServer.cpp.o.provides.build: CMakeFiles/udpsrv.dir/TcpServer.cpp.o
 
 CMakeFiles/udpsrv.dir/UdpServer.cpp.o: CMakeFiles/udpsrv.dir/flags.make
 CMakeFiles/udpsrv.dir/UdpServer.cpp.o: UdpServer.cpp
@@ -282,6 +282,7 @@ CMakeFiles/udpsrv.dir/UdpServer.cpp.o.provides.build: CMakeFiles/udpsrv.dir/UdpS
 # Object files for target udpsrv
 udpsrv_OBJECTS = \
 "CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o" \
+"CMakeFiles/udpsrv.dir/Acceptor.cpp.o" \
 "CMakeFiles/udpsrv.dir/Channel.cpp.o" \
 "CMakeFiles/udpsrv.dir/EPoller.cpp.o" \
 "CMakeFiles/udpsrv.dir/EventHandler.cpp.o" \
@@ -289,13 +290,13 @@ udpsrv_OBJECTS = \
 "CMakeFiles/udpsrv.dir/IpPort.cpp.o" \
 "CMakeFiles/udpsrv.dir/PollerBase.cpp.o" \
 "CMakeFiles/udpsrv.dir/Socket.cpp.o" \
-"CMakeFiles/udpsrv.dir/TcpServer.cpp.o" \
 "CMakeFiles/udpsrv.dir/UdpServer.cpp.o"
 
 # External object files for target udpsrv
 udpsrv_EXTERNAL_OBJECTS =
 
 udpsrv: CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o
+udpsrv: CMakeFiles/udpsrv.dir/Acceptor.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/Channel.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/EPoller.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/EventHandler.cpp.o
@@ -303,7 +304,6 @@ udpsrv: CMakeFiles/udpsrv.dir/HReactor.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/IpPort.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/PollerBase.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/Socket.cpp.o
-udpsrv: CMakeFiles/udpsrv.dir/TcpServer.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/UdpServer.cpp.o
 udpsrv: CMakeFiles/udpsrv.dir/build.make
 udpsrv: CMakeFiles/udpsrv.dir/link.txt
@@ -315,6 +315,7 @@ CMakeFiles/udpsrv.dir/build: udpsrv
 .PHONY : CMakeFiles/udpsrv.dir/build
 
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/utest_udpserver.cpp.o.requires
+CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/Acceptor.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/Channel.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/EPoller.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/EventHandler.cpp.o.requires
@@ -322,7 +323,6 @@ CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/HReactor.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/IpPort.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/PollerBase.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/Socket.cpp.o.requires
-CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/TcpServer.cpp.o.requires
 CMakeFiles/udpsrv.dir/requires: CMakeFiles/udpsrv.dir/UdpServer.cpp.o.requires
 .PHONY : CMakeFiles/udpsrv.dir/requires
 

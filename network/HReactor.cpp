@@ -1,6 +1,7 @@
 #include "HReactor.h"
 #include "Channel.h"
 #include "PollerBase.h"
+#include "EPoller.h"
 #include <assert.h>
 
 HReactor::HReactor(){
@@ -56,11 +57,14 @@ void HReactor::run(){
 
 void HReactor::updateChannel(Channel* channel){
     assert(poller != NULL);
+    //add into the vector
+    
     poller->updateChannel(channel);    
 }
 
 void HReactor::removeChannel(Channel* channel){
     assert(poller != NULL);
+    //remove from the vector
     poller->removeChannel(channel);
 }
 

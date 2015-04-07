@@ -6,16 +6,16 @@
 #include "Channel.h"
 
 
-class DefaultEventHandler;
 class HReactor;
 class Socket;
 
 class Acceptor{
 public:
-    Acceptor(HReactor* reactor, IPPort ipPort,Socket socket,EventHandler* eventHandler);
+    Acceptor(HReactor* reactor, IPPort& ipPort,EventHandler* eventHandler);
     ~Acceptor();
 
     bool isListening(){ return bIsListen;}
+    void bind();
     void listen();
     void handleNewConnection();
 
@@ -24,9 +24,8 @@ private:
 
     HReactor* reactor;
     IPPort ipPort;
-    Socket acceptSocket;
-    DefaultEventHandler eventHandler;
     Channel acceptChannel;
+    Socket* acceptSocket;
     
 };
 

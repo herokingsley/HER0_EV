@@ -1,4 +1,5 @@
 SET(SRC_LIST 
+        Acceptor.cpp
         Channel.cpp
         EPoller.cpp
         EventHandler.cpp
@@ -6,7 +7,7 @@ SET(SRC_LIST
         IpPort.cpp
         PollerBase.cpp
         Socket.cpp
-        TcpServer.cpp
+        #TcpServer.cpp
         UdpServer.cpp
         
     )
@@ -22,5 +23,6 @@ MESSAGE(STATUS "This is SOURCE dir " ${HREACTOR_TEST_01_SOURCE_DIR})
 #ADD_EXECUTABLE(epoll_cli utest_epoll_client.cpp ${SRC_LIST})
 
 ADD_EXECUTABLE(udpsrv utest_udpserver.cpp ${SRC_LIST})
+ADD_EXECUTABLE(udpcli utest_udpsocket_cli.cpp ${SRC_LIST}) 
 
 

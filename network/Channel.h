@@ -10,7 +10,9 @@ class EventHandler;
 class Channel{
 
 public:
-    Channel(HReactor* reactor, Socket socket,EventHandler* eventHandler);
+    Channel(HReactor* reactor, SocketType type,EventHandler* eventHandler);
+    Channel(HReactor* reactor,SocketType type, int socketFd,EventHandler* eventHandler);
+    //Channel(HReactor* reactor, Socket socket,EventHandler* eventHandler);
     virtual ~Channel();
     void handleEvent();
 

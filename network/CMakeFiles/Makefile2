@@ -53,13 +53,48 @@ CMAKE_SOURCE_DIR = /home/herokingsley/HER0_EV/network
 CMAKE_BINARY_DIR = /home/herokingsley/HER0_EV/network
 
 #=============================================================================
+# Target rules for target CMakeFiles/udpcli.dir
+
+# All Build rule for target.
+CMakeFiles/udpcli.dir/all:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/depend
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5 6 7 8 9 10
+	@echo "Built target udpcli"
+.PHONY : CMakeFiles/udpcli.dir/all
+
+# Include target in all.
+all: CMakeFiles/udpcli.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udpcli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udpcli.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/herokingsley/HER0_EV/network/CMakeFiles 0
+.PHONY : CMakeFiles/udpcli.dir/rule
+
+# Convenience name for target.
+udpcli: CMakeFiles/udpcli.dir/rule
+.PHONY : udpcli
+
+# clean rule for target.
+CMakeFiles/udpcli.dir/clean:
+	$(MAKE) -f CMakeFiles/udpcli.dir/build.make CMakeFiles/udpcli.dir/clean
+.PHONY : CMakeFiles/udpcli.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/udpcli.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/udpsrv.dir
 
 # All Build rule for target.
 CMakeFiles/udpsrv.dir/all:
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/depend
 	$(MAKE) -f CMakeFiles/udpsrv.dir/build.make CMakeFiles/udpsrv.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  1 2 3 4 5 6 7 8 9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/herokingsley/HER0_EV/network/CMakeFiles  11 12 13 14 15 16 17 18 19 20
 	@echo "Built target udpsrv"
 .PHONY : CMakeFiles/udpsrv.dir/all
 

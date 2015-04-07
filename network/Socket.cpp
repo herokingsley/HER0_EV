@@ -33,10 +33,11 @@ void Socket::initSocketWithType(SocketType type){
 
 void Socket::bind(IPPort& ipPort){
     struct sockaddr_in sockAddrIn;
+    socklen_t sockLen = sizeof(sockAddrIn);
     sockAddrIn.sin_family = AF_INET;
     sockAddrIn.sin_port = ipPort.getNetworkPort();
-    sockAddrIn.sin_addr.s_addr = INADDR_ANY;
-    int ret = ::bind(this->socketFd,(const struct  sockaddr*)&sockAddrIn,static_cast<socklen_t>(sizeof sockAddrIn) );
+    sockAddrIn.sin_addr.s_addr = htonl(INADDR_ANY);
+    int ret = ::bind(this->socketFd,(struct  sockaddr*)&sockAddrIn, sockLen );
     if(ret == -1)
         perror("bind() error");
 }
@@ -103,8 +104,21 @@ ssize_t Socket::recv(char* data,int& iLen){
 }
 
 ssize_t Socket::send(char* data,int iLen){
-
+    
 }
 
+ssize_t Socket::sendTo(char* data,IPPort& ipPort,int iLen){
+    peer_sockAddrIn.sin_port = ipPort.getNetworkPort();
+    peer_sockAddrIn.sin_family = AF_INET;
+    inet_pton(AF_INET, ipPort.getIp(), &peer_sockAddrIn.sin_addr);
+    socklen_t peer_len = sizeof(peer_sockAddrIn);
+    int ret = ::sendto(socketFd,data,iLen,0,(struct sockaddr *)&peer_sockAddrIn,peer_len);
+    return ret;
+}
 
-
+ssize_t Socket::recvFrom(char* data, IPPort& ipPort,int &iLen){
+   socklen_t peer_len = sizeof(peer_sockAddrIn);
+   int ret = ::recvfrom(socketFd,data,1024,0,(struct sockaddr *)&peer_sockAddrIn,&peer_len);
+   iLen = ret;
+   return ret;
+}
